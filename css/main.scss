@@ -28,6 +28,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$on-tablet:        768px;
+$on-desktop:       992px;
+$on-xl-desktop:    1200px;
+
 
 
 // Use media queries like this:
@@ -38,7 +42,7 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }

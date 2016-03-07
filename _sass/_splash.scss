@@ -1,8 +1,90 @@
 .splash {
 	height:100%;
 	background: #3498db;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(#000, .5);
+	font-weight: 200;
+
+	.container {
+		height:100%;
+		.row {
+			height: 100%;
+		}
+	}
+
+	.greeting, .intro {
+	  @include display(flex);
+	  @include flex-direction(column);
+	  @include align-items(flex-start);
+	  @include justify-content(center);
+	}
 
 	.greeting {
-		color: #fff;
+		h1 {
+			font-weight:100;
+			font-size: 6em;
+		}
+	}
+	.intro {
+		a {
+			text-shadow: none;
+			color: rgba(#000, 0.5);
+			@include transition(all 0.25s ease-in-out);
+			text-decoration: underline;
+			white-space: pre-line;
+
+			&:hover {
+				color: rgba(#fff, 0.5);
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@include media-query($on-tablet) {
+	.splash {
+		.greeting, .intro {
+			height: 100%;
+			@include display(flex);
+		  @include flex-direction(column);
+		  @include align-items(flex-start);
+		  @include justify-content(center);
+		}
+		.greeting {
+			text-align: center;
+			h1 {
+				font-size: 18em;
+			}
+		}
+		.intro {
+			p {
+				font-size: 1.25em;
+			}
+		}
+	}
+}
+
+@include media-query($on-desktop){
+	.splash{
+		.greeting {
+			h1 {
+				font-size: 24em;
+			}
+		}
+		.intro {
+			p {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+@include media-query($on-xl-desktop) {
+	.splash {
+		.intro {
+			p {
+				font-size: 2em;
+			}
+		}
 	}
 }
