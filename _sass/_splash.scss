@@ -7,9 +7,24 @@
 
 	.container {
 		height:100%;
-		.row {
-			height: 100%;
+
+		.row.welcome-panel {
+			height: 70%;
+			@include display(flex);
+	  	@include flex-direction(column);
+	  	@include align-items(center);
+	  	@include justify-content(center);
 		}
+		.row.social-panel {
+			height: 20%;
+			background: orange;
+		}
+
+		.row.next-button {
+			height: 10%;
+			background: green;
+		}
+
 	}
 
 	.greeting, .intro {
@@ -30,12 +45,11 @@
 			text-shadow: none;
 			color: rgba(#000, 0.5);
 			@include transition(all 0.25s ease-in-out);
-			text-decoration: underline;
-			white-space: pre-line;
+			white-space: no-wrap;
 
 			&:hover {
-				color: rgba(#fff, 0.5);
-				text-decoration: none;
+				color: rgba(#fff, 0.75);
+				text-decoration: underline;
 			}
 		}
 	}
@@ -43,6 +57,16 @@
 
 @include media-query($on-tablet) {
 	.splash {
+
+		.container {
+			.row.welcome-panel {
+				@include display(flex);
+	  		@include flex-direction(row);
+	  		@include align-items(flex-start);
+	  		@include justify-content(center);
+			}
+		}
+
 		.greeting, .intro {
 			height: 100%;
 			@include display(flex);
