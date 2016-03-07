@@ -49,12 +49,11 @@ $on-xl-desktop:    1200px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+				"fonts",
 				"bourbon",
-				// "neat",
         "base",
         "layout",
         "syntax-highlighting",
-        "fonts",
         "splash",
         "bottom_bar"
 ;
