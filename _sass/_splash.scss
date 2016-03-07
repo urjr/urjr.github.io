@@ -9,14 +9,14 @@
 		height:100%;
 
 		.row.welcome-panel {
-			height: 70%;
+			height: 80%;
 			@include display(flex);
 	  	@include flex-direction(column);
 	  	@include align-items(center);
 	  	@include justify-content(center);
 		}
 		.row.social-panel {
-			height: 20%;
+			height: 10%;
 		}
 
 		.row.next-button {
@@ -35,7 +35,7 @@
 	.greeting {
 		h1 {
 			font-weight:100;
-			font-size: 6em;
+			font-size: 12em;
 		}
 	}
 	.intro {
@@ -47,7 +47,7 @@
 
 			&:hover {
 				color: rgba(#fff, 0.75);
-				text-decoration: underline;
+				text-decoration: none;
 			}
 		}
 	}
