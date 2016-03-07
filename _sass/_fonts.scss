@@ -1,96 +1,96 @@
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-Bold.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-Bold.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-Bold.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-Bold.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-Bold.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-Bold.svg#Circular-Bold') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-Bold.eot');
+	src: url('{{ site.url }}/fonts/Circular-Bold.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-Bold.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-Bold.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-Bold.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-Bold.svg#Circular-Bold') format('svg');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-BlackItalic.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-BlackItalic.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-BlackItalic.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-BlackItalic.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-BlackItalic.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-BlackItalic.svg#Circular-BlackItalic') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-BlackItalic.eot');
+	src: url('{{ site.url }}/fonts/Circular-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-BlackItalic.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-BlackItalic.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-BlackItalic.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-BlackItalic.svg#Circular-BlackItalic') format('svg');
 	font-weight: 900;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-Book.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-Book.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-Book.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-Book.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-Book.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-Book.svg#Circular-Book') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-Book.eot');
+	src: url('{{ site.url }}/fonts/Circular-Book.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-Book.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-Book.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-Book.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-Book.svg#Circular-Book') format('svg');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-MediumItalic.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-MediumItalic.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-MediumItalic.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-MediumItalic.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-MediumItalic.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-MediumItalic.svg#Circular-MediumItalic') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-MediumItalic.eot');
+	src: url('{{ site.url }}/fonts/Circular-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-MediumItalic.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-MediumItalic.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-MediumItalic.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-MediumItalic.svg#Circular-MediumItalic') format('svg');
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-BoldItalic.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-BoldItalic.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-BoldItalic.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-BoldItalic.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-BoldItalic.svg#Circular-BoldItalic') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-BoldItalic.eot');
+	src: url('{{ site.url }}/fonts/Circular-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-BoldItalic.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-BoldItalic.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-BoldItalic.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-BoldItalic.svg#Circular-BoldItalic') format('svg');
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Circular Book';
-	src: url('{{ site.baseurl }}/fonts/Circular-BookItalic.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-BookItalic.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-BookItalic.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-BookItalic.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-BookItalic.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-BookItalic.svg#Circular-BookItalic') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-BookItalic.eot');
+	src: url('{{ site.url }}/fonts/Circular-BookItalic.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-BookItalic.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-BookItalic.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-BookItalic.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-BookItalic.svg#Circular-BookItalic') format('svg');
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-Medium.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-Medium.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-Medium.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-Medium.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-Medium.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-Medium.svg#Circular-Medium') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-Medium.eot');
+	src: url('{{ site.url }}/fonts/Circular-Medium.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/Circular-Medium.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-Medium.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-Medium.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-Medium.svg#Circular-Medium') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Circular';
-	src: url('{{ site.baseurl }}/fonts/Circular-Black.eot');
-	src: url('{{ site.baseurl }}/fonts/Circular-Black.eot?#iefix') format('embedded-opentype'),
-		// url('{{ site.baseurl }}/fonts/Circular-Black.woff2') format('woff2'),
-		url('{{ site.baseurl }}/fonts/Circular-Black.woff') format('woff'),
-		url('{{ site.baseurl }}/fonts/Circular-Black.ttf') format('truetype'),
-		url('{{ site.baseurl }}/fonts/Circular-Black.svg#Circular-Black') format('svg');
+	src: url('{{ site.url }}/fonts/Circular-Black.eot');
+	src: url('{{ site.url }}/fonts/Circular-Black.eot?#iefix') format('embedded-opentype'),
+		// url('{{ site.url }}/fonts/Circular-Black.woff2') format('woff2'),
+		url('{{ site.url }}/fonts/Circular-Black.woff') format('woff'),
+		url('{{ site.url }}/fonts/Circular-Black.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/Circular-Black.svg#Circular-Black') format('svg');
 	font-weight: 900;
 	font-style: normal;
 }
