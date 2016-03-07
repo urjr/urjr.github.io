@@ -47,11 +47,10 @@ $on-xl-desktop:    1200px;
     }
 }
 
-@import 'bourbon';
-@import 'neat';
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+				"bourbon",
+				// "neat",
         "base",
         "layout",
         "syntax-highlighting",
