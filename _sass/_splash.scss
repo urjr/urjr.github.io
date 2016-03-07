@@ -9,14 +9,14 @@
 		height:100%;
 
 		.row.welcome-panel {
-			height: 80%;
+			height: 75%;
 			@include display(flex);
 	  	@include flex-direction(column);
 	  	@include align-items(center);
 	  	@include justify-content(center);
 		}
 		.row.social-panel {
-			height: 10%;
+			height: 15%;
 		}
 
 		.row.next-button {
