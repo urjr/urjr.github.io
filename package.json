@@ -1,0 +1,23 @@
+{
+  "name": "urjr.github.io",
+  "version": "1.0.0",
+  "description": "My landing Page",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urjr/urjr.github.io.git"
+  },
+  "author": "Ulises Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urjr/urjr.github.io/issues"
+  },
+  "homepage": "https://github.com/urjr/urjr.github.io#readme"
+}

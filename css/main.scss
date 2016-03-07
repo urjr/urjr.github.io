@@ -16,7 +16,7 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #3498db;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -28,6 +28,10 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$on-tablet:        768px;
+$on-desktop:       992px;
+$on-xl-desktop:    1200px;
+
 
 
 // Use media queries like this:
@@ -38,17 +42,20 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
 
-
+@import 'bourbon';
+@import 'neat';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
         "syntax-highlighting",
-        "fonts"
+        "fonts",
+        "splash",
+        "bottom_bar"
 ;

@@ -17,3 +17,5 @@ github_username:  urjr
 
 # Build settings
 markdown: kramdown
+
+gems: [bourbon, neat]
