@@ -1,0 +1,66 @@
+.bottom-bar-container {
+	height: 100%;
+	.bottom-bar {
+		margin-left:0;
+		margin-right: 0;
+		height: 80%;
+		border-radius: 3px;
+		@include display(flex);
+  	@include flex-direction(row);
+  	@include align-items(center);
+  	@include justify-content(center);
+
+  	.bar-item {
+  		position: relative;
+  		bottom: 0;
+  		height: 100%;
+  		box-shadow: 0 1px 0 rgba(#000, 0.5);
+  		@include transition(all 0.25s ease-in-out);
+
+  		&:hover {
+  			bottom: 10px;
+  			box-shadow: 0 5px 10px rgba(#000, 0.15);
+  			z-index: 500;
+  		}
+
+  		&:first-child {
+  			border-top-left-radius: 3px;
+  			border-bottom-left-radius: 3px;
+  		}
+
+  		&:last-child {
+  			border-radius: 3px; 			
+  		}
+
+  		&:nth-child(0n+5) {
+  			border-top-right-radius: 3px;
+  			border-bottom-right-radius: 3px;  			
+  		}
+  	}
+
+  	.bar-linkedin {
+  		background: #007bb5;
+  	}
+
+		.bar-instagram {
+			background: #125688;
+		}
+
+		.bar-twitter {
+			background: #55acee;
+		}
+
+		.bar-github {
+			background: #f5f5f5;
+		}
+
+		.bar-email {
+			background: #d5d5d5;
+		}
+
+		.bar-menu {
+			background: #fff;
+			margin-left: 10px;
+		}
+	}
+}
