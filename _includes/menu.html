@@ -1,16 +1,16 @@
 <div class="menu disabled">
 	<nav>
 		<li>
-			<a class="menu-home" href="#">Home</a>
+			<a {% if include.active == "home" %} class="menu-home active" {% else %} class="menu-home" {% endif %} href="#">Home</a>
 		</li>
 		<li>
-			<a class="menu-about" href="#">About</a>
+			<a {% if include.active == "about" %} class="menu-about active" {% else %} class="menu-about" {% endif %} href="#">About</a>
 		</li>
 		<li>
-			<a class="menu-blog" href="#">Blog</a>
+			<a {% if include.active == "blog" %} class="menu-blog active" {% else %} class="menu-blog" {% endif %} href="#">Blog</a>
 		</li>
 		<li>
-			<a class="menu-sandbox" href="#">Sandbox</a>
+			<a {% if include.active == "sandbox" %} class="menu-sandbox active" {% else %} class="menu-sandbox" {% endif %} href="#">Sandbox</a>
 		</li>
 	</nav>
 
