@@ -1,8 +1,13 @@
+.menu.disabled {
+	left: 100%;
+	opacity: 0;
+}
+
 .menu {
 	width: 100%;
 	height:100%;
 	position: fixed;
-	background: rgba(#fff, 0.98);
+	background: #fff;
 	z-index: 5000;
 	top:0;
 	left:0;
@@ -79,7 +84,7 @@
 		height:50px;
 		width:50px;
 		box-shadow: 0 1px 0 rgba(#000, 0.5);
-		position: fixed;
+		position: absolute;
 		right: 2em;
 		bottom: 2em;
 		@include transition(all 0.5s);
