@@ -15,6 +15,13 @@ url: "http://ulises.me" # the base hostname & protocol for your site
 twitter_username: ureys
 github_username:  urjr
 
+color:
+  home_color: "3498db"
+  about_color: "2ecc71"
+  work_color: "e67e22"
+  blog_color: "9b59b6"
+  sandbox_color: "7f8c8d"
+
 # Build settings
 markdown: kramdown
 
