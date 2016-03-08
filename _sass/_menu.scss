@@ -1,5 +1,6 @@
 .menu.disabled {
 	left: 100%;
+	border-radius: 250px;
 	opacity: 0;
 }
 
@@ -9,13 +10,14 @@
 	position: fixed;
 	background: #fff;
 	z-index: 5000;
+	border-radius: 0;
 	top:0;
 	left:0;
 	@include display(flex);
 	@include flex-direction(column);
 	@include align-items(center);
 	@include justify-content(center);
-	@include transition(all 0.25s);
+	@include transition(all 0.5s);
 
 	nav {
 		list-style-type: none;
