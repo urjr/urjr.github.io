@@ -91,7 +91,7 @@
 			}
 
 			&:hover {
-				cursor: not-allowed !important;
+				cursor: pointer;
 
 				.logo-square {
 					background: darken($brand-color, 20%);
@@ -99,12 +99,6 @@
 			}
 		}
 	}
-}
-
-
-
-.bottom-bar-container.expanded {
-	
 }
 
 @include media-query($on-tablet) {

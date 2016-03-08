@@ -1,0 +1,107 @@
+.menu.disabled {
+	left: 100%;
+	border-radius: 250px;
+	opacity: 0;
+}
+
+.menu {
+	width: 100%;
+	height:100%;
+	position: fixed;
+	background: #fff;
+	z-index: 5000;
+	border-radius: 0;
+	top:0;
+	left:0;
+	@include display(flex);
+	@include flex-direction(column);
+	@include align-items(center);
+	@include justify-content(center);
+	@include transition(all 0.5s);
+
+	nav {
+		list-style-type: none;
+		li { 
+			a {
+				font-size: 2.5em;
+				color: rgba(#000, .35);
+				@include transition(all 0.75s);
+				text-decoration: none;
+
+				&::before {
+					content:"";
+					background: transparent;
+					display: inline-block;
+					position: relative;
+					bottom: 4px;
+					right: 15px;
+					height: 20px;
+					width: 20px;
+					@include transition(all .75s);
+				}
+
+				&:hover::before, &.active::before {
+					@include transform(rotate(90deg));
+					box-shadow: 1px 0px 0 rgba(#000, 0.5);
+				}
+
+				&:hover, &.active {
+					color: blue;
+					text-shadow: 0px 1px 0 rgba(#000, 0.5);
+				}
+			}
+
+			.menu-home:hover, .menu-home.active {
+				color: $home-color;
+				&::before {
+					background: $home-color;
+				}
+			}
+
+			.menu-about:hover, .menu-about.active {
+				color: $about-color;
+				&::before {
+					background: $about-color;
+				}
+			}
+
+			.menu-work:hover, .menu-work.active {
+				color: $work-color;
+				&::before {
+					background: $work-color;
+				}
+			}
+
+			.menu-blog:hover, .menu-blog.active {
+				color: $blog-color;
+				&::before {
+					background: $blog-color;
+				}
+			}
+
+			.menu-sandbox:hover, .menu-sandbox.active {
+				color: $sandbox-color;
+				&::before {
+					background: $sandbox-color;
+				}
+			}
+		}
+	}
+
+	.menu-close {
+		background: $menu-close-color;
+		height:50px;
+		width:50px;
+		box-shadow: 0 1px 0 rgba(#000, 0.5);
+		position: absolute;
+		right: 2em;
+		bottom: 2em;
+		@include transition(all 0.5s);
+
+		&:hover {
+			cursor: pointer;
+			bottom: 3em;
+			box-shadow: 0 1em 10px rgba(#000,0.25);
+		}
+	}
+}

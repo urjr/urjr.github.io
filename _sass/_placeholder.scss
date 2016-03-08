@@ -1,0 +1,30 @@
+.placeholder {
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+	box-shadow: 0 1px 0 rgba(#000, 0.5);
+	@include transition(all 0.25s);
+
+	&:hover {
+		margin-top: -115px;
+		box-shadow: 0 15px 12px rgba(#000, 0.25);
+		@include transition(all 0.75s);
+	}
+
+	&.about {
+		background: $about-color;
+	}
+	&.work {
+		background: $work-color;
+	}
+	&.blog {
+		background: $blog-color;
+	}
+	&.sandbox {
+		background: $sandbox-color;
+	}
+}
