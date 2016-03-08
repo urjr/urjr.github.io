@@ -65,6 +65,13 @@
 				}
 			}
 
+			.menu-work:hover, .menu-work.active {
+				color: $work-color;
+				&::before {
+					background: $work-color;
+				}
+			}
+
 			.menu-blog:hover, .menu-blog.active {
 				color: $blog-color;
 				&::before {
@@ -93,7 +100,8 @@
 
 		&:hover {
 			cursor: pointer;
-			background: darken($menu-close-color, 10%);
+			bottom: 3em;
+			box-shadow: 0 1em 10px rgba(#000,0.25);
 		}
 	}
 }
