@@ -28,7 +28,7 @@
 
   		&:hover {
   			bottom: 10px;
-  			box-shadow: 0 5px 10px rgba(#000, 0.15);
+  			box-shadow: 0 10px 5px rgba(#000, 0.15);
   			z-index: 500;
   		}
 
@@ -84,6 +84,7 @@
 				height: 25px;
 				margin-top: -12.5px;
 				margin-left: -12.5px;
+				
 				background: $brand-color;
 				box-shadow:0 1px 0 rgba(#000, 0.5);
 				@include transition(all 0.25s ease-in-out);
@@ -98,6 +99,12 @@
 			}
 		}
 	}
+}
+
+
+
+.bottom-bar-container.expanded {
+	
 }
 
 @include media-query($on-tablet) {

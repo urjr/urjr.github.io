@@ -43,11 +43,13 @@
 		a {
 			text-shadow: none;
 			color: rgba(#000, 0.5);
+			text-shadow: 0 1px 0  rgba(#fff, 0.15);
 			@include transition(all 0.25s ease-in-out);
 			white-space: no-wrap;
 
 			&:hover {
 				color: rgba(#fff, 0.75);
+				text-shadow: none;
 				text-decoration: none;
 			}
 		}
