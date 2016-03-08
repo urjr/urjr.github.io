@@ -91,7 +91,7 @@
 			}
 
 			&:hover {
-				cursor: not-allowed !important;
+				cursor: pointer;
 
 				.logo-square {
 					background: darken($brand-color, 20%);
