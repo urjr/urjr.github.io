@@ -1,16 +1,22 @@
 .splash {
-	height:100%;
-	min-height: 600px;
+	height: 100%;
+	width: 100%;
+	min-height: 480px;
 	background: $brand-color;
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(#000, .5);
 	font-weight: 200;
+	position: fixed;
+	overflow-y: scroll;
 
 	.container {
 		height:100%;
+		@include display(flex);
+		@include flex-direction(column);
+		@include justify-content(flex-start);
 
 		.row.welcome-panel {
-			height: 75%;
+			height: 70%;
 			@include display(flex);
 	  	@include flex-direction(column);
 	  	@include align-items(center);
@@ -19,11 +25,6 @@
 		.row.social-panel {
 			height: 15%;
 		}
-
-		.row.next-button {
-			height: 10%;
-		}
-
 	}
 
 	.greeting, .intro {
@@ -36,7 +37,7 @@
 	.greeting {
 		h1 {
 			font-weight:100;
-			font-size: 12em;
+			font-size: 7em;
 		}
 	}
 	.intro {
@@ -55,17 +56,38 @@
 			}
 		}
 	}
+	.next-button {
+		height: 10%;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		margin:0;
+
+		// &:hover {
+		// 	background: orange;
+		// }
+	}
 }
 
 @include media-query($on-tablet) {
 	.splash {
 
 		.container {
+			@include display(flex);
+			@include flex-direction(column);
+			@include justify-content(center);
 			.row.welcome-panel {
 				@include display(flex);
 	  		@include flex-direction(row);
 	  		@include align-items(flex-start);
 	  		@include justify-content(center);
+			}
+
+			.row.welcome-panel {
+				height: 60%
+			}
+			.row.social-panel {
+				height: 15%
 			}
 		}
 
@@ -92,6 +114,7 @@
 
 @include media-query($on-desktop){
 	.splash{
+
 		.greeting {
 			h1 {
 				font-size: 24em;
