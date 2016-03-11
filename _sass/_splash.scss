@@ -38,9 +38,11 @@
 		h1 {
 			font-weight:100;
 			font-size: 7em;
+			@include user-select(none);
 		}
 	}
 	.intro {
+		@include user-select(none);
 		a {
 			text-shadow: none;
 			color: rgba(#000, 0.5);
@@ -53,6 +55,12 @@
 				color: rgba(#fff, 0.75);
 				text-shadow: none;
 				text-decoration: none;
+			}
+
+			&:active, &:focus {
+				color: rgba(#000, 0.85);
+				text-decoration: none;
+				text-shadow: 0 1px 0  rgba(#fff, 0.15);
 			}
 		}
 	}
