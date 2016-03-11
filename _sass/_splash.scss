@@ -39,10 +39,14 @@
 			font-weight:100;
 			font-size: 7em;
 			@include user-select(none);
+			cursor: default;
 		}
 	}
 	.intro {
 		@include user-select(none);
+		p {
+			cursor: default;
+		}
 		a {
 			text-shadow: none;
 			color: rgba(#000, 0.5);
