@@ -20,6 +20,7 @@
 		@include transition(all .25s);
 
 		&:hover {
+			background: rgba(white, 0.1) !important;
 			border-radius: 5px;
 			box-sizing: border-box;
 			border:1px solid rgba(black, .1);
