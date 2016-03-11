@@ -18,9 +18,10 @@
 		margin: auto;
 		border: 1px solid transparent;
 		@include transition(all .25s);
+		background-image: url('/img/next_button/chevron_up.svg');
 
 		&:hover {
-			background: rgba(white, 0.1) !important;
+			background-color: rgba(white, 0.1) !important;
 			border-radius: 5px;
 			box-sizing: border-box;
 			border:1px solid rgba(black, .1);
@@ -30,7 +31,7 @@
 		&:active {
 			top: 1px;
 			box-shadow: 0 -1px 0 rgba(black, .5);
-			background: rgba(black, 0.25) !important;
+			background-color: rgba(black, 0.25) !important;
 			@include transition(all .1s);
 		}
 	}

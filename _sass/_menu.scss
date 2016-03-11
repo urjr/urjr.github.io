@@ -133,8 +133,8 @@
 		width:25px;
 		box-shadow: 0 1px 0 rgba(#000, 0.5);
 		position: absolute;
-		right: 2em;
-		bottom: 2em;
+		right: 1em;
+		bottom: 1em;
 		@include transition(all 0.5s);
 
 		&:hover {
@@ -160,8 +160,8 @@
 				display:inline-block;
 				position:relative;
 				bottom: 0;
-				height: 50px;
-				width:50px;
+				height: 25px;
+				width:45px;
 				background-repeat: no-repeat;
 				background-position: center center;
 				background-size: 25px auto;
@@ -172,22 +172,35 @@
 			}
 
 			a.linkedin{
-				background-image: url('/img/menu/menu-linkedin.svg');
+				background-image: url('/img/menu/menu_linkedin.svg');
 			}
 
 			a.instagram {
-				background-image: url('/img/menu/menu-instagram.svg');
+				background-image: url('/img/menu/menu_instagram.svg');
 			}
 			a.twitter {
-				background-image: url('/img/menu/menu-twitter.svg');
+				background-image: url('/img/menu/menu_twitter.svg');
 			}
 			a.github {
-				background-image: url('/img/menu/menu-github.svg');
+				background-image: url('/img/menu/menu_github.svg');
 			}
 			a.email {
-				background-image: url('/img/menu/menu-email.svg');
+				background-image: url('/img/menu/menu_email.svg');
 			}
 		}
+	}
+
+	.menu-footer {
+		font-weight: 200;
+		opacity: 0.40;
+		font-size: .75em;
+		text-align: center;
+		position: absolute;
+		bottom:5px;
+		width: 100%;
+		text-align: center;
+		cursor: default;
+		@include user-select(none);
 	}
 }
 
@@ -196,6 +209,8 @@
 		.menu-close {
 			height:40px;
 			width:40px;
+			right: 2em;
+			bottom: 2em;
 		}
 	}
 }

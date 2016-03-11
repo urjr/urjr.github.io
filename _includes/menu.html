@@ -1,4 +1,5 @@
 <div class="menu disabled">
+
 	<nav class="menu-items">
 		<li>
 			<a {% if include.active == "home" %} class="menu-home active" {% else %} class="menu-home" {% endif %} href="/">Home</a>
@@ -34,6 +35,8 @@
 			<a class="email" href="mailto:hi@ulises.me"></a>
 		</li>
 	</nav>
+
+	<h2 class="menu-footer">Ulises Reyes &copy; {{ site.time | date: '%Y' }} All Rights Reserved</h2>
 
 	<div class="menu-close"></div>
 </div>
