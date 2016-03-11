@@ -32,6 +32,11 @@
   			z-index: 500;
   		}
 
+  		&:active {
+  			bottom: 0;
+  			box-shadow: 0 1px 0 rgba(#000, 0.5);
+  		}
+
   		&:first-child {
   			border-top-left-radius: 3px;
   			border-bottom-left-radius: 3px;
@@ -50,26 +55,42 @@
   	.bar-linkedin {
   		background-color: #007bb5;
   		background-image: url('/img/bottom_bar/linkedin.svg');
+
+  		&:active {
+  			background-color: darken(#007bb5,5%);
+  		}
   	}
 
 		.bar-instagram {
 			background: #125688;
 			background-image: url('/img/bottom_bar/instagram.svg');
+			&:active {
+  			background-color: darken(#125688,5%);
+  		}
 		}
 
 		.bar-twitter {
 			background: #55acee;
 			background-image: url('/img/bottom_bar/twitter.svg');
+			&:active {
+  			background-color: darken(#55acee,5%);
+  		}
 		}
 
 		.bar-github {
 			background: #f5f5f5;
 			background-image: url('/img/bottom_bar/github.svg');
+			&:active {
+  			background-color: darken(#f5f5f5,10%);
+  		}
 		}
 
 		.bar-email {
 			background: #d5d5d5;
 			background-image: url('/img/bottom_bar/mail.svg');
+			&:active {
+  			background-color: darken(#d5d5d5,10%);
+  		}
 		}
 
 		.bar-menu {
@@ -94,7 +115,16 @@
 				cursor: pointer;
 
 				.logo-square {
-					background: darken($brand-color, 20%);
+					top: 40%;
+					box-shadow:0 10px 5px rgba(#000, 0.25);
+					background: saturate($brand-color, 50%);
+				}
+			}
+
+			&:active {
+				.logo-square {
+					top:50%;
+					box-shadow:0 1px 0 rgba(#000, 0.5);
 				}
 			}
 		}

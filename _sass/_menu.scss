@@ -90,8 +90,8 @@
 
 	.menu-close {
 		background: $menu-close-color;
-		height:50px;
-		width:50px;
+		height:25px;
+		width:25px;
 		box-shadow: 0 1px 0 rgba(#000, 0.5);
 		position: absolute;
 		right: 2em;
@@ -102,6 +102,15 @@
 			cursor: pointer;
 			bottom: 3em;
 			box-shadow: 0 1em 10px rgba(#000,0.25);
+		}
+	}
+}
+
+@include media-query($on-tablet){
+	.menu {
+		.menu-close {
+			height:40px;
+			width:40px;
 		}
 	}
 }
