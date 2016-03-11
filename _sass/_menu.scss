@@ -49,12 +49,23 @@
 					color: blue;
 					text-shadow: 0px 1px 0 rgba(#000, 0.5);
 				}
+
+				&:active, &:active::before {
+					@include transition(all 0.15s);
+				}
 			}
 
 			.menu-home:hover, .menu-home.active {
 				color: $home-color;
 				&::before {
 					background: $home-color;
+				}
+
+				&:active {
+					color: darken($home-color, 20%);
+					&::before {
+						background: darken($home-color, 20%);
+					}
 				}
 			}
 
@@ -63,12 +74,26 @@
 				&::before {
 					background: $about-color;
 				}
+
+				&:active {
+					color: darken($about-color, 20%);
+					&::before {
+						background: darken($about-color, 20%);
+					}
+				}
 			}
 
 			.menu-work:hover, .menu-work.active {
 				color: $work-color;
 				&::before {
 					background: $work-color;
+				}
+
+				&:active {
+					color: darken($work-color, 20%);
+					&::before {
+						background: darken($work-color, 20%);
+					}
 				}
 			}
 
@@ -77,12 +102,26 @@
 				&::before {
 					background: $blog-color;
 				}
+
+				&:active {
+					color: darken($blog-color, 20%);
+					&::before {
+						background: darken($blog-color, 20%);
+					}
+				}
 			}
 
 			.menu-sandbox:hover, .menu-sandbox.active {
 				color: $sandbox-color;
 				&::before {
 					background: $sandbox-color;
+				}
+
+				&:active {
+					color: darken($sandbox-color, 20%);
+					&::before {
+						background: darken($sandbox-color, 20%);
+					}
 				}
 			}
 		}
@@ -102,6 +141,13 @@
 			cursor: pointer;
 			bottom: 3em;
 			box-shadow: 0 1em 10px rgba(#000,0.25);
+		}
+
+		&:active {
+			box-shadow: 0 1px 0 rgba(#000, 0.5);
+			bottom: 2em;
+			background: darken($menu-close-color, 10%);
+			@include transition(all 0.15s);
 		}
 	}
 }
