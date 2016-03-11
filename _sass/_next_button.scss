@@ -1,0 +1,36 @@
+.next-button {
+	height: 12.5%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin:0;
+
+	// &:hover {
+	// 	background: orange;
+	// }
+
+	a {
+		display: block;
+		top:0;
+		position: relative;
+		height:90%;
+		width:90%;
+		margin: auto;
+		border: 1px solid transparent;
+		@include transition(all .25s);
+
+		&:hover {
+			border-radius: 5px;
+			box-sizing: border-box;
+			border:1px solid rgba(black, .1);
+			box-shadow: 0 1px 0 rgba(black, .5);
+		}
+
+		&:active {
+			top: 1px;
+			box-shadow: 0 -1px 0 rgba(black, .5);
+			background: rgba(black, 0.25) !important;
+			@include transition(all .1s);
+		}
+	}
+}
