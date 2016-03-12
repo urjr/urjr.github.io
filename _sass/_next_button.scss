@@ -16,7 +16,7 @@
 		@include transition(all .25s);
 		background-image: url('/img/next_button/chevron_up.svg');
 		background-repeat: no-repeat;
-		@include animation(slide-up 1.25s ease-out);
+		@include animation(slide-up 1.5s ease);
 		@include animation-fill-mode(forwards);
 
 		&:hover {
@@ -38,9 +38,11 @@
 
 @include keyframes(slide-up) {
   from {
+  	opacity: 0;
     background-position: center 200%;
   }
   to {
+  	opacity: 1;
     background-position: center center;
   }
 }

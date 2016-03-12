@@ -5,9 +5,8 @@
 	background: $brand-color;
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(#000, .5);
-	font-weight: 200;
+	font-weight: 300;
 	position: fixed;
-	overflow-y: scroll;
 
 	.container {
 		height:100%;
@@ -36,7 +35,7 @@
 
 	.greeting {
 		h1 {
-			font-weight:100;
+			font-weight:300;
 			font-size: 7em;
 			@include user-select(none);
 			cursor: default;

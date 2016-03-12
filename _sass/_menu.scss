@@ -51,7 +51,11 @@
 				}
 
 				&:active, &:active::before {
-					@include transition(all 0.15s);
+					@include transition(all 0.15s ease);
+				}
+
+				&:active::before {
+					@include transform(rotate(810deg));
 				}
 			}
 
@@ -139,13 +143,11 @@
 
 		&:hover {
 			cursor: pointer;
-			bottom: 3em;
 			box-shadow: 0 1em 10px rgba(#000,0.25);
 		}
 
 		&:active {
-			box-shadow: 0 1px 0 rgba(#000, 0.5);
-			bottom: 2em;
+			box-shadow: 0 1px 0 rgba(#000, 0.5) !important;
 			background: darken($menu-close-color, 10%);
 			@include transition(all 0.15s);
 		}
@@ -191,7 +193,7 @@
 	}
 
 	.menu-footer {
-		font-weight: 200;
+		font-weight: 300;
 		opacity: 0.40;
 		font-size: .75em;
 		text-align: center;
@@ -211,6 +213,15 @@
 			width:40px;
 			right: 2em;
 			bottom: 2em;
+
+			&:hover {
+				bottom: 2.5em;
+				box-shadow: 0 0.5em 5px rgba(#000,0.25);
+			}
+
+			&:active {
+				bottom: 2em;
+			}
 		}
 	}
 }

@@ -97,6 +97,7 @@
 		.bar-menu {
 			background: #fff;
 			margin-left: 10px;
+			@include transition(all 1s ease);
 
 			.logo-square {
 				position: relative;
