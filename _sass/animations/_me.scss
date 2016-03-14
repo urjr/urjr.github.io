@@ -44,7 +44,7 @@
 		@include animation-name(hand-wave);
 		@include animation-duration(.5s);
 		@include animation-iteration-count(infinite);
-		@include animation-timing-function(ease);
+		@include animation-timing-function(ease-in-out);
 		@include animation-direction(alternate);
 		// @include animation-fill-mode(both);
 	}
@@ -68,6 +68,6 @@
 
 	100% {
 		@include transform(rotate(-30deg));
-		left:11%;
+		left:10.5%;
 	}
 }

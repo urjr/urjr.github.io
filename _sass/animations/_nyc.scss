@@ -1,0 +1,136 @@
+.animation-nyc {
+	z-index: 200;
+
+	img {
+		position: absolute;
+	}
+
+	.nyc-base {
+		width: 100%;
+		bottom:0;
+		left:0;
+		z-index:100;
+	}
+
+	.nyc-shadows { 
+		width: 100%;
+		bottom:15%;
+		left:0;
+		opacity:.5;
+		z-index: 5;
+	}
+
+	.nyc-clouds {
+		width: 100%;
+		top: 10%;
+		left:0;
+		z-index:10;
+	}
+
+	.nyc-liberty {
+		z-index: 90;
+		width:30%;
+		bottom:0;
+		left:35%;
+	}
+
+	.nyc-wtc {
+		width:20%;
+		left:25%;
+		bottom:0;
+		z-index:80;
+		@include animation-name(pulse);
+		@include animation-duration(1.75s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease-in-out);
+		@include animation-direction(alternate);
+	}
+
+	.nyc-chrystler {
+		width:20%;
+		left:55%;
+		bottom:0;
+		z-index:80;
+		@include animation-name(pulse);
+		@include animation-duration(1s);
+		@include animation-delay(0.25s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease-in-out);
+		@include animation-direction(alternate);
+	}
+
+	.nyc-bridge {
+		width:80%;
+		left:20%;
+		bottom:3%;
+		z-index:95;
+	}
+
+	.nyc-towers {
+		z-index: 20;
+		bottom: 0;
+		@include animation-name(pulse);
+		@include animation-duration(2s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease-in-out);
+		@include animation-direction(alternate);
+	}
+
+	.nyc-tower-1 {
+		height:60%;
+		left: 10%;
+		z-index: 20;
+		@include animation-delay(0.3s);
+	}
+	.nyc-tower-2 {
+		height:75%;
+		left: 15%;
+		z-index:15;
+		@include animation-delay(0.6s);
+	}
+	.nyc-tower-3 {
+		height:60%;
+		left: 65%;
+		z-index:15;
+		@include animation-delay(0.5s);
+	}
+	.nyc-tower-4 {
+		height:40%;
+		left: 70%;
+		z-index:15;
+	}
+	.nyc-tower-5 {
+		height:45%;
+		left: 80%;
+		z-index:15;
+		@include animation-delay(0.4s);
+	}
+
+	.nyc-sun {
+		width:30%;
+		height:30%;
+		top:0;
+		right:0;
+		z-index:95;
+		@include animation-name(spin);
+		@include animation-duration(6s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(linear);
+	}
+}
+
+@include keyframes(pulse) {
+	0% {
+		bottom:0;
+	}
+
+	100% {
+		bottom:5%;
+	}
+}
+
+@include keyframes(spin) {
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
