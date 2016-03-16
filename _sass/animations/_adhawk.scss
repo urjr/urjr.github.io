@@ -1,0 +1,28 @@
+.animation-adhawk {
+	img {
+		position: absolute;
+	}
+
+	.trimmed-area {
+		background: #fff;
+	}
+
+	.adhawk-logo{
+		width: 60%;
+		left: 20%;
+		@include animation-name(logo-float);
+		@include animation-duration(1.5s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease-in-out);
+		@include animation-direction(alternate);
+	}
+}
+
+@include keyframes(logo-float){
+ 	from {
+ 		top: 40%;
+ 	}
+ 	to {
+ 		top:35%;
+ 	}
+}
