@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="105.201px" height="133.83px" viewBox="0 0 105.201 133.83" enable-background="new 0 0 105.201 133.83"
 	 xml:space="preserve">
 <g id="Background">
 </g>
 <g id="Objects">
-	<path fill="#F44C4D" d="M0.046,51.051v73.277c0,5.227,4.276,9.502,9.503,9.502h86.149c5.227,0,9.503-4.275,9.503-9.502V51.051
+	<path fill="#F44C4D" d="M0.046,51.051v73.277c0,5.228,4.276,9.502,9.503,9.502h86.149c5.227,0,9.503-4.274,9.503-9.502V51.051
 		H0.046z"/>
 	<path fill="#F44C4D" d="M105.201,54.051V35.495L70.093,0H9.549C4.322,0,0.046,4.276,0.046,9.503v44.548H105.201z"/>
-	<path d="M70.093,0l-3.604,32.766c0,5.227,4.276,9.503,9.503,9.503l29.209-6.773L70.093,0z"/>
+	<path opacity="0.5" d="M70.093,0l-3.604,32.766c0,5.227,4.275,9.503,9.503,9.503l29.209-6.773L70.093,0z"/>
 	<path fill="#FFFFFF" d="M70.183,0v25.946c0,5.227,4.277,9.503,9.504,9.503H105.2L70.183,0z"/>
 	<g>
 		<g>
@@ -20,7 +20,7 @@
 				c0,1.396,0.908,2.083,2.969,2.88c2.526,0.976,3.811,2.193,3.811,4.388c0,2.304-1.706,4.298-5.229,4.298
 				c-1.44,0-3.013-0.421-3.811-0.953L16.713,31.279z"/>
 			<path fill="#FFFFFF" d="M31.182,33.628l-4.875-14.933h2.083l2.326,7.355c0.643,2.016,1.196,3.833,1.595,5.583h0.044
-				c0.421-1.729,1.041-3.611,1.706-5.561l2.525-7.378h2.06l-5.339,14.933H31.182z"/>
+				c0.421-1.729,1.041-3.611,1.706-5.561l2.525-7.378h2.06l-5.339,14.933L31.182,33.628L31.182,33.628z"/>
 			<path fill="#FFFFFF" d="M51.634,32.963c-0.865,0.311-2.57,0.82-4.587,0.82c-2.26,0-4.12-0.576-5.583-1.972
 				c-1.285-1.241-2.082-3.235-2.082-5.562c0.021-4.453,3.079-7.71,8.086-7.71c1.729,0,3.08,0.377,3.723,0.687L50.726,20.8
 				c-0.799-0.354-1.795-0.643-3.302-0.643c-3.634,0-6.005,2.26-6.005,6.004c0,3.789,2.283,6.026,5.762,6.026
@@ -33,7 +33,7 @@
 				<rect x="21.774" y="78.051" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" width="60.686" height="32.5"/>
 			<polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" points="21.774,110.551 37.423,95.801 
 				48.403,103.176 64.403,87.551 82.46,101.551 			"/>
-			<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="47.006" cy="88.536" r="3.228"/>
+			<circle fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="47.006" cy="88.536" r="3.229"/>
 		</g>
 	</g>
 	<rect y="51.051" fill="#FFFFFF" width="105.155" height="3"/>
