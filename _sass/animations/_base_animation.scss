@@ -15,7 +15,7 @@
 		height: 100%;
 		background: rgba(#fff, 0.65);
 		position: relative;
-		overflow: hidden;
+		overflow: hidden !important;
 		border-radius: 100%;
 		box-shadow: 0 1px 0 rgba(black, 0.75) inset;
 	}
