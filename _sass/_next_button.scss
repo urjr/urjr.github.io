@@ -1,0 +1,48 @@
+.next-button {
+	height: 12.5%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin:0;
+
+	a {
+		display: block;
+		top:0;
+		position: relative;
+		height:90%;
+		width:90%;
+		margin: auto;
+		border: 1px solid transparent;
+		@include transition(all .25s);
+		background-image: url('/img/next_button/chevron_up.svg');
+		background-repeat: no-repeat;
+		@include animation(slide-up 1.5s ease);
+		@include animation-fill-mode(forwards);
+
+		&:hover {
+			background-color: rgba(white, 0.1) !important;
+			border-radius: 5px;
+			box-sizing: border-box;
+			border:1px solid rgba(black, .1);
+			box-shadow: 0 1px 0 rgba(black, .5);
+		}
+
+		&:active {
+			top: 1px;
+			box-shadow: 0 -1px 0 rgba(black, .5);
+			background-color: rgba(black, 0.25) !important;
+			@include transition(all .1s);
+		}
+	}
+}
+
+@include keyframes(slide-up) {
+  from {
+  	opacity: 0;
+    background-position: center 200%;
+  }
+  to {
+  	opacity: 1;
+    background-position: center center;
+  }
+}

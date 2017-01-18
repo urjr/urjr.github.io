@@ -1,0 +1,48 @@
+.animation-mail {
+	img {
+		position: absolute;
+	}
+
+	.envelope-back, .envelope-front, .envelope-flap-shadow, .envelope-flap {
+		width: 75%;
+		left: 12.5%;
+	}
+
+	.envelope-body {
+		bottom: 0;
+	}
+
+	.envelope-opening {
+		bottom: 13%;
+	}
+
+	.envelope-back {
+		z-index: 10;
+	}
+
+	.letter {
+		width: 60%;
+		bottom: -10%;
+		left: 20%;
+		z-index: 15;
+	}
+
+	.envelope-front {
+		z-index: 20;
+	}
+
+	.envelope-flap-shadow {
+		z-index: 24;
+		opacity: 0;
+	}
+
+	.envelope-flap {
+		z-index: 14;
+		@include transform(rotate(180deg));
+		bottom: 43%;
+
+		&:hover {
+			z-index: 17;
+		}
+	}
+}

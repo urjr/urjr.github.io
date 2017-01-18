@@ -19,26 +19,30 @@
 	@include justify-content(center);
 	@include transition(all 0.5s);
 
-	nav {
+	nav.menu-items {
 		list-style-type: none;
 		li { 
+			text-align: center;
 			a {
 				font-size: 2.5em;
 				color: rgba(#000, .35);
 				@include transition(all 0.75s);
 				text-decoration: none;
+				margin: auto;
 
-				&::before {
-					content:"";
-					background: transparent;
-					display: inline-block;
-					position: relative;
-					bottom: 4px;
-					right: 15px;
-					height: 20px;
-					width: 20px;
-					@include transition(all .75s);
-				}
+				// MENU ITEM SQUARES
+				
+				// &::before {
+				// 	content:"";
+				// 	background: transparent;
+				// 	display: inline-block;
+				// 	position: relative;
+				// 	bottom: 4px;
+				// 	right: 15px;
+				// 	height: 20px;
+				// 	width: 20px;
+				// 	@include transition(all .75s);
+				// }
 
 				&:hover::before, &.active::before {
 					@include transform(rotate(90deg));
@@ -49,12 +53,27 @@
 					color: blue;
 					text-shadow: 0px 1px 0 rgba(#000, 0.5);
 				}
+
+				&:active, &:active::before {
+					@include transition(all 0.15s ease);
+				}
+
+				&:active::before {
+					@include transform(rotate(810deg));
+				}
 			}
 
 			.menu-home:hover, .menu-home.active {
 				color: $home-color;
 				&::before {
 					background: $home-color;
+				}
+
+				&:active {
+					color: darken($home-color, 20%);
+					&::before {
+						background: darken($home-color, 20%);
+					}
 				}
 			}
 
@@ -63,12 +82,26 @@
 				&::before {
 					background: $about-color;
 				}
+
+				&:active {
+					color: darken($about-color, 20%);
+					&::before {
+						background: darken($about-color, 20%);
+					}
+				}
 			}
 
 			.menu-work:hover, .menu-work.active {
 				color: $work-color;
 				&::before {
 					background: $work-color;
+				}
+
+				&:active {
+					color: darken($work-color, 20%);
+					&::before {
+						background: darken($work-color, 20%);
+					}
 				}
 			}
 
@@ -77,6 +110,13 @@
 				&::before {
 					background: $blog-color;
 				}
+
+				&:active {
+					color: darken($blog-color, 20%);
+					&::before {
+						background: darken($blog-color, 20%);
+					}
+				}
 			}
 
 			.menu-sandbox:hover, .menu-sandbox.active {
@@ -84,24 +124,108 @@
 				&::before {
 					background: $sandbox-color;
 				}
+
+				&:active {
+					color: darken($sandbox-color, 20%);
+					&::before {
+						background: darken($sandbox-color, 20%);
+					}
+				}
 			}
 		}
 	}
 
 	.menu-close {
 		background: $menu-close-color;
-		height:50px;
-		width:50px;
+		height:25px;
+		width:25px;
 		box-shadow: 0 1px 0 rgba(#000, 0.5);
 		position: absolute;
-		right: 2em;
-		bottom: 2em;
+		right: 1em;
+		bottom: 1em;
 		@include transition(all 0.5s);
 
 		&:hover {
 			cursor: pointer;
-			bottom: 3em;
 			box-shadow: 0 1em 10px rgba(#000,0.25);
+		}
+
+		&:active {
+			box-shadow: 0 1px 0 rgba(#000, 0.5) !important;
+			background: darken($menu-close-color, 10%);
+			@include transition(all 0.15s);
+		}
+	}
+
+	.social-icons {
+		margin-top: 25px;
+		display: inline-block;
+		li {
+			display: inline-block;
+			a {
+				display:inline-block;
+				position:relative;
+				bottom: 0;
+				height: 25px;
+				width:35px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 20px auto;
+				@include transition(all 0.25s);
+				&:hover {
+					bottom: 5px;
+				}
+			}
+
+			a.linkedin{
+				background-image: url('/img/menu/menu_linkedin.svg');
+			}
+
+			a.instagram {
+				background-image: url('/img/menu/menu_instagram.svg');
+			}
+			a.twitter {
+				background-image: url('/img/menu/menu_twitter.svg');
+			}
+			a.github {
+				background-image: url('/img/menu/menu_github.svg');
+			}
+			a.email {
+				background-image: url('/img/menu/menu_email.svg');
+			}
+		}
+	}
+
+	.menu-footer {
+		font-weight: 300;
+		opacity: 0.40;
+		font-size: .75em;
+		text-align: center;
+		position: absolute;
+		bottom:5px;
+		width: 100%;
+		text-align: center;
+		cursor: default;
+		@include user-select(none);
+	}
+}
+
+@include media-query($on-tablet){
+	.menu {
+		.menu-close {
+			height:40px;
+			width:40px;
+			right: 2em;
+			bottom: 2em;
+
+			&:hover {
+				bottom: 2.5em;
+				box-shadow: 0 0.5em 5px rgba(#000,0.25);
+			}
+
+			&:active {
+				bottom: 2em;
+			}
 		}
 	}
 }

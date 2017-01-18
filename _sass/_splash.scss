@@ -5,9 +5,8 @@
 	background: $brand-color;
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(#000, .5);
-	font-weight: 200;
+	font-weight: 300;
 	position: fixed;
-	overflow-y: scroll;
 
 	.container {
 		height:100%;
@@ -23,7 +22,7 @@
 	  	@include justify-content(center);
 		}
 		.row.social-panel {
-			height: 15%;
+			height: 20%;
 		}
 	}
 
@@ -35,12 +34,19 @@
 	}
 
 	.greeting {
+		position: relative;
 		h1 {
-			font-weight:100;
+			font-weight:300;
 			font-size: 7em;
+			@include user-select(none);
+			cursor: default;
 		}
 	}
 	.intro {
+		@include user-select(none);
+		p {
+			cursor: default;
+		}
 		a {
 			text-shadow: none;
 			color: rgba(#000, 0.5);
@@ -54,18 +60,13 @@
 				text-shadow: none;
 				text-decoration: none;
 			}
-		}
-	}
-	.next-button {
-		height: 10%;
-		width: 100%;
-		position: absolute;
-		bottom: 0;
-		margin:0;
 
-		// &:hover {
-		// 	background: orange;
-		// }
+			&:active, &:focus {
+				color: rgba(#000, 0.85);
+				text-decoration: none;
+				text-shadow: 0 1px 0  rgba(#fff, 0.15);
+			}
+		}
 	}
 }
 

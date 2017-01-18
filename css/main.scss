@@ -35,7 +35,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$on-tablet:        768px;
+$on-tablet:        600px;
 $on-desktop:       992px;
 $on-xl-desktop:    1200px;
 
@@ -59,10 +59,17 @@ $on-xl-desktop:    1200px;
 		"fonts",
 		"bourbon",
         "base",
-        "layout",
-        "syntax-highlighting",
+        // "layout",
+        // "syntax-highlighting",
         "splash",
+        "next_button",
         "bottom_bar",
         "menu",
+        "animations/base_animation",
+        "animations/me",
+        "animations/nyc",
+        "animations/design",
+        "animations/adhawk",
+        "animations/mail",
         "placeholder"
 ;

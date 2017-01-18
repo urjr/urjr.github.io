@@ -1,0 +1,73 @@
+.animation-me {
+	img {
+		position: absolute;
+	}
+
+	.animation-container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.me-head {
+		width:40%;
+		left: 37.5%;
+		bottom: 55%;
+		z-index: 60;
+		@include animation-name(head-nod);
+		@include animation-duration(1s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease);
+		@include animation-direction(alternate);
+	}
+
+	.me-torso {
+		bottom: 0;
+		left: 40%;
+		width: 50%;
+		z-index: 50;
+	}
+
+	.me-bicep {
+		bottom: 35%;
+		left: 28%;
+		width: 14%;
+		@include transform(rotate(-45deg));
+		z-index: 10;
+	}
+
+	.me-forearm {
+		bottom: 60%;
+		left: 17.25%;
+		width: 14%;
+		z-index:60;
+		@include animation-name(hand-wave);
+		@include animation-duration(.5s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease-in-out);
+		@include animation-direction(alternate);
+		// @include animation-fill-mode(both);
+	}
+}
+
+@include keyframes(head-nod) {
+	0% {
+		@include transform(rotate(-10deg));
+	}
+
+	100% {
+		@include transform(rotate(10deg));
+	}
+}
+
+@include keyframes(hand-wave) {
+	0% {
+		@include transform(rotate(30deg));
+		left:23.5%;
+	}
+
+	100% {
+		@include transform(rotate(-30deg));
+		left:10.5%;
+	}
+}
