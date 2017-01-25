@@ -7,24 +7,24 @@ $(function(){
 					$('.greeting h1').stop(true, false);
 					$(animation).show(speed);
 				} else {
-					$('.greeting h1').fadeTo('fast',0);
+					$('.greeting h1').fadeTo(speed,0);
 					$(animation).show(speed);
 				}
 			})
 			.mouseleave(function(){
-				$('.greeting h1').delay(500).fadeTo('fast', 1);
+				$('.greeting h1').delay(400).fadeTo(speed, 1);
 				$(animation).hide(speed);		
 			});
 		},
 
-		init: function(){
-			splashAnim.hoverEffect('.splash-me','.animation-me', 'fast');
-			splashAnim.hoverEffect('.splash-design','.animation-design', 'fast');
-			splashAnim.hoverEffect('.splash-nyc','.animation-nyc', 'fast');
-			splashAnim.hoverEffect('.splash-mail','.animation-mail', 'fast');
-			splashAnim.hoverEffect('.splash-adhawk','.animation-adhawk', 'fast');
+		init: function(speed){
+			splashAnim.hoverEffect('.splash-me','.animation-me', speed);
+			splashAnim.hoverEffect('.splash-design','.animation-design', speed);
+			splashAnim.hoverEffect('.splash-nyc','.animation-nyc', speed);
+			splashAnim.hoverEffect('.splash-mail','.animation-mail', speed);
+			splashAnim.hoverEffect('.splash-adhawk','.animation-adhawk', speed);
 		},
 	}
 
-	splashAnim.init();
+	splashAnim.init('fast');
 });
