@@ -17,6 +17,15 @@
 
 	.summary-text {
 		padding-top: 25%;
+		a {
+			color: rgba(black, 0.5);
+			text-decoration: underline;
+			@include transition(all 0.25s ease-in-out);
+
+			&:hover {
+				color: rgba(black, 0.75);
+			}
+		}
 	}
 
 	.summary-nouns {
@@ -101,6 +110,9 @@
 		.summary-image {
 			.phone{
 				width: 75%;
+			}
+			.play {
+				width: 35%;
 			}
 		}
 	}
