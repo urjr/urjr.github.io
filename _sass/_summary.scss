@@ -1,6 +1,6 @@
 .summary {
 	background: white;
-	height: 100vh;
+	height: 90vh;
 	margin-top: 100vh;
 	width:100%;
 	position: relative;
@@ -64,21 +64,21 @@
 			z-index: 403;
 			width: 40%;
 			left: 5%;
-			top: 80%;
+			top: 90%;
 		}
 
 		.profile {
 			z-index: 404;
 			width: 20%;
 			left: 55%;
-			top: 60%;
+			top: 75%;
 		}
 
 		.search {
 			z-index: 405;
 			width: 50%;
 			right: 5%;
-			top:35%;
+			top: 45%;
 		}
 	}
 }
@@ -88,6 +88,8 @@
 		max-height: 700px;
 
 		.summary-image{
+
+
 			.like{
 				top: 80%;
 			}
@@ -98,6 +100,9 @@
 
 			.profile {
 				top: 65%;
+			}
+			.search{
+				top:35%;
 			}
 		}
 	}
