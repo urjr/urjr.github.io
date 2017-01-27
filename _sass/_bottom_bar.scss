@@ -44,13 +44,15 @@
   		}
 
   		&:last-child {
-  			border-radius: 3px; 			
+  			// border-radius: 3px;
+  			border-top-right-radius: 3px;
+  			border-bottom-right-radius: 3px; 		
   		}
 
-  		&:nth-child(0n+5) {
-  			border-top-right-radius: 3px;
-  			border-bottom-right-radius: 3px;  			
-  		}
+  		// &:nth-child(0n+5) {
+  		// 	border-top-right-radius: 3px;
+  		// 	border-bottom-right-radius: 3px;  			
+  		// }
   	}
 
   	.bar-linkedin {
