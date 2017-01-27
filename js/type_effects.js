@@ -3,7 +3,7 @@ $(function() {
 
 		summary: function(){
 			$(".summary-nouns").typed({
-        strings: ["interfaces.", "graphics.","brands.","experiences.", "cool shit."],
+        strings: ["interfaces.", "identities.","brands.","experiences.", "cool shit!"],
         typeSpeed: 0,
         loop: true,
 	    });

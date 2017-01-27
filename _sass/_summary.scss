@@ -5,6 +5,11 @@
 	width:100%;
 	position: relative;
 	z-index: 400;
+	
+
+	.summary-nouns {
+		opacity: 0.75;
+	}
 }
 
 @include media-query($on-tablet) {
