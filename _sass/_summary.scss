@@ -16,7 +16,7 @@
 	}
 
 	.summary-text {
-		padding-top: 25%;
+		padding-top: 15%;
 		a {
 			color: rgba(black, 0.5);
 			text-decoration: underline;
@@ -86,6 +86,9 @@
 @include media-query($on-tablet) {
 	.summary {
 		max-height: 700px;
+		.summary-text {
+			padding-top: 25%;
+		}
 
 		.summary-image{
 
