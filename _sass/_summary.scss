@@ -51,34 +51,34 @@
 			z-index: 401;
 			width: 20%;
 			left: 10%;
-			top:10%;
+			top:20%;
 		}
 
 		.like{
 			z-index: 402;
 			width: 20%;
-			left: 15%;
+			left: 25%;
 		}
 
 		.play {
 			z-index: 403;
 			width: 40%;
 			left: 5%;
-			top: 35%;
+			top: 80%;
 		}
 
 		.profile {
 			z-index: 404;
 			width: 20%;
-			left: 50%;
-			top: 50%;
+			left: 55%;
+			top: 60%;
 		}
 
 		.search {
 			z-index: 405;
 			width: 50%;
 			right: 5%;
-			top:25%;
+			top:35%;
 		}
 	}
 }
@@ -89,15 +89,15 @@
 
 		.summary-image{
 			.like{
-				top: 60%;
+				top: 80%;
 			}
 
 			.play {
-				top: 35%;
+				top: 75%;
 			}
 
 			.profile {
-				top: 45%;
+				top: 65%;
 			}
 		}
 	}
@@ -109,10 +109,11 @@
 
 		.summary-image {
 			.phone{
-				width: 75%;
+				width: 85%;
 			}
 			.play {
-				width: 35%;
+				top: 70%;
+				width: 45%;
 			}
 		}
 	}
