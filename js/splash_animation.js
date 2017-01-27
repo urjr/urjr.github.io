@@ -2,11 +2,11 @@ $(function(){
 	var splashAnim = {
 
 		hoverEffect: function(text, animation, speed){
-			$(text).mouseenter(function(){
+			$(text).on('mouseenter touchstart', function(){
 				$('.greeting h1').stop(true, false).fadeTo(speed,0);
 				$(animation).show(speed);
 			})
-			.mouseleave(function(){
+			.on('mouseleave touchmove click', function(){
 				$('.greeting h1').stop(true, false).delay(400).fadeTo(speed, 1);
 				$(animation).hide(speed);		
 			});
