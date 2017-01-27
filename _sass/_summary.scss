@@ -28,37 +28,48 @@
 		height: 100%;
 
 		img {
-			position: relative;
+			position: absolute;
 			margin: auto;
 		}
 
 		.phone {
 			z-index: 402;
 			top: 15%;
+			position: relative;
 		}
 
 		.bulb {
 			z-index: 401;
+			width: 20%;
+			left: 10%;
+			top:10%;
 		}
 
 		.like{
 			z-index: 402;
+			width: 20%;
+			left: 15%;
 		}
 
 		.play {
 			z-index: 403;
+			width: 40%;
+			left: 5%;
+			top: 35%;
 		}
 
 		.profile {
 			z-index: 404;
-		}
-
-		.scrubber {
-			z-index: 405;
+			width: 20%;
+			left: 50%;
+			top: 50%;
 		}
 
 		.search {
-			z-index: 406;
+			z-index: 405;
+			width: 50%;
+			right: 5%;
+			top:25%;
 		}
 	}
 }
@@ -66,13 +77,27 @@
 @include media-query($on-tablet) {
 	.summary {
 		max-height: 700px;
+
+		.summary-image{
+			.like{
+				top: 60%;
+			}
+
+			.play {
+				top: 35%;
+			}
+
+			.profile {
+				top: 45%;
+			}
+		}
 	}
 }
 
 @include media-query($on-desktop){
 	.summary{
-		max-height: 900px;
-		
+		max-height: 800px;
+
 		.summary-image {
 			.phone{
 				width: 75%;
