@@ -1,8 +1,14 @@
 .summary {
 	background: white;
-	height: 75%;
-	width:100%;
-	z-index: 1000;
-	position: absolute;
+	height: 100vh;
 	margin-top: 100vh;
+	width:100%;
+	position: relative;
+	z-index: 400;
+}
+
+@include media-query($on-tablet) {
+	.summary {
+		height: 75vh;
+	}
 }
