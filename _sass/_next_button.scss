@@ -16,7 +16,7 @@
 		@include transition(all .25s);
 		background-image: url('/img/next_button/chevron_up.svg');
 		background-repeat: no-repeat;
-		background-size: 50px auto;
+		background-size: 60px auto;
 		@include animation(slide-up 1.5s ease);
 		@include animation-fill-mode(forwards);
 
@@ -33,6 +33,14 @@
 			box-shadow: 0 -1px 0 rgba(black, .5);
 			background-color: rgba(black, 0.25) !important;
 			@include transition(all .1s);
+		}
+	}
+}
+
+@include media-query($on-tablet) {
+	.next-button {
+		a {
+			background-size: 75px auto;
 		}
 	}
 }
