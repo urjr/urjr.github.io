@@ -19,7 +19,7 @@
 		padding: 1em;
 
 		width: 80%;
-		top: 10%;
+		top: 30%;
 		position: absolute;
 		z-index: 420;
 
@@ -96,12 +96,43 @@
 	}
 }
 
+.adhawk-website {
+	background: #95a5a6;
+
+	.container {
+		top: 55%;
+	}
+
+	img {
+		&.main {
+			position: relative;
+			z-index: 410;
+			width: 60%;
+		}
+
+		&.secondary {
+			width: 40%;
+			position: absolute;
+		}
+
+		&.pro {
+			left: 5%;
+			top: 5%;
+		}
+
+		&.testimonial {
+			top: 5%;
+			right: 5%;
+		}
+	}
+}
+
 @include media-query($on-tablet) {
 	.features {
 		height: 700px;
 
 		.feature-description {
-			width: 35%;
+			width: 40%;
 			top: 20%;
 		}
 	}
@@ -120,6 +151,12 @@
 			&.secondary {
 				width: 250px;
 			}
+		}
+	}
+
+	.adhawk-website {
+		.container {
+			top: 40%;
 		}
 	}
 }
