@@ -54,7 +54,7 @@
 			h1 {
 				font-size: 4em;
 				color: rgba(#000, 0.75);
-				text-shadow: none;
+				text-shadow: 0 1px 0 rgba(#fff, 0.25);	
 				@include transition(.25s);
 
 			}
@@ -62,7 +62,7 @@
 			&:hover {
 				h1 {
 					color: #fff;
-  					text-shadow: 0 1px 0 rgba(#000, 0.5);					
+  					text-shadow: 0 -1px 0 rgba(#000, 0.5);					
 				}
 			}
 		}
