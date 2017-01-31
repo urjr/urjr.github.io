@@ -8,7 +8,7 @@ $(function(){
 		},
 
 		init: function(){
-			var $openBtn = $('.bar-menu');
+			var $openBtn = $('.hamburger');
 			var $closeBtn = $('.menu-close');
 			if (menu.isOpen) {
 				$closeBtn.on('click', function(){

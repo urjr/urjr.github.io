@@ -22,9 +22,13 @@
 
 	.letter {
 		width: 60%;
-		bottom: -10%;
 		left: 20%;
 		z-index: 15;
+		@include animation-name(letter-float);
+		@include animation-duration(1.5s);
+		@include animation-iteration-count(infinite);
+		@include animation-timing-function(ease-in-out);
+		@include animation-direction(alternate);
 	}
 
 	.envelope-front {
@@ -40,9 +44,14 @@
 		z-index: 14;
 		@include transform(rotate(180deg));
 		bottom: 43%;
-
-		&:hover {
-			z-index: 17;
-		}
 	}
+}
+
+@include keyframes(letter-float){
+ 	from {
+ 		bottom: -10%;
+ 	}
+ 	to {
+ 		bottom:10%;
+ 	}
 }
