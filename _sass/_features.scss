@@ -118,5 +118,9 @@
 @include media-query($on-desktop) {
 	.features {
 		height: 800px;
+
+		.background {
+			height: 120vh
+		}
 	}
 }
