@@ -1,0 +1,122 @@
+.features {
+	width: 100%;
+	height: 60vh;
+	position: relative;
+	z-index: 390;
+	overflow: hidden;
+
+	.feature-description {
+		background: rgba(#454545, .95);
+		padding: 1em;
+		width: 60%;
+		top: 30%;
+		position: absolute;
+		z-index: 420;
+
+		.feature-text {
+			display: none;
+		}
+
+		&.left {
+			left: 0;
+			h1,h2,h3,h4,p {
+				text-align: left;
+			}
+		}
+
+		&.right {
+			right: 0;
+			h1,h2,h3,h4,p {
+				text-align: right;
+			}
+		}
+
+		a {
+			h4 {
+				opacity: 0.75;
+
+				&:hover {
+					opacity: 1;
+					text-decoration: none;
+				}
+			}
+		}
+
+		h1,h2,h3,h4,p {
+			color: #fff;
+		}
+	}
+}
+
+.adhawk-app {
+	background: #1CCB8D;
+
+	.background {
+		top: 60%;
+		background: url("/img/features/adhawk_app/phone.png");
+	}
+}
+
+.adhawk-website {
+	background: $brand-color;
+
+	.background {
+		top: 85%;
+		background: url("/img/features/adhawk_website/website.png");
+	}
+}
+
+.smarking {
+	background: #9b59b6;
+	margin-bottom: 200px;
+}
+
+.features .background {
+	position: relative;
+	width: 100%;
+	height: 100vh ;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@include media-query($on-tablet) {
+	.features {
+		height: 700px;
+
+		.feature-description {
+			width: 40%;
+			top: 20%;
+
+			.feature-text {
+				display: block;
+			}
+		}
+	}
+
+	.adhawk-app {
+		.background {
+			top: 35%;
+		}
+	}
+
+	.adhawk-website {
+		.background {
+			top: 35%;
+		}
+	}
+
+	.smarking {
+		background: #9b59b6;
+		margin-bottom: 400px;
+	}
+
+	.features .background {
+		background-size: cover;
+	}
+}
+
+@include media-query($on-desktop) {
+	.features {
+		height: 800px;
+	}
+}

@@ -2,7 +2,6 @@
 	height: 200px;
 	width: 100%;
 	position: fixed;
-	// z-index: 300;
 	bottom: 0;
 
 	&.appear {
@@ -15,6 +14,7 @@
 		display: inline-block;
 		float: left;
 		text-align: center;
+		@include transition(.25s);
 		@include display(flex);
   		@include flex-direction(column);
   		@include align-items(center);
@@ -28,10 +28,16 @@
 
 	.about {
 		background: $about-color;
+		&:hover {
+			background: darken($about-color, 5%);
+		}
 	}
 
 	.work {
 		background: $work-color;
+		&:hover {
+			background: darken($work-color, 5%);
+		}
 	}
 }
 
@@ -49,8 +55,6 @@
 @include media-query($on-desktop) {
 	.landing-footer {
 		.link {
-			@include transition(.25s);
-
 			h1 {
 				font-size: 4em;
 				color: rgba(#000, 0.75);
@@ -65,14 +69,6 @@
   					text-shadow: 0 -1px 0 rgba(#000, 0.5);					
 				}
 			}
-		}
-
-		.about:hover {
-			background: darken($about-color, 5%);
-		}
-
-		.work:hover {
-			background: darken($work-color, 5%);
 		}
 	}
 }
