@@ -96,22 +96,19 @@
 	.adhawk-app {
 		.background {
 			top: 20%;
+			background-size: cover;
 		}
 	}
 
 	.adhawk-website {
 		.background {
-			top: 35%;
+			top: 45%;
 		}
 	}
 
 	.smarking {
 		background: #9b59b6;
 		margin-bottom: 400px;
-	}
-
-	.features .background {
-		background-size: cover;
 	}
 }
 
@@ -120,7 +117,7 @@
 		height: 800px;
 
 		.background {
-			height: 120vh
+			height: 120vh;
 		}
 	}
 }
