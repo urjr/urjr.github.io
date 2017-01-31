@@ -14,7 +14,7 @@
 		margin: auto;
 		border: 1px solid transparent;
 		@include transition(all .25s);
-		background-image: url('/img/next_button/chevron_up.svg');
+		background-image: url('/img/next_button/chevron_down.svg');
 		background-repeat: no-repeat;
 		background-size: 60px auto;
 		@include animation(slide-up 1.5s ease);
@@ -41,14 +41,6 @@
 	.next-button {
 		a {
 			background-size: 75px auto;
-		}
-	}
-}
-
-@include media-query($on-desktop) {
-	.next-button {
-		a {
-			background-image: url('/img/next_button/chevron_down.svg');
 		}
 	}
 }

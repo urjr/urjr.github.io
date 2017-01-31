@@ -3,7 +3,7 @@ $(function(){
 		zUpdate: function(){
 			var win = $(window);
 			var footer = $('.landing-footer');
-			var trigger = footer.height();
+			var trigger = footer.height() * 2;
     		win.scroll(function(e){
 	        	var scrollTop = win.scrollTop();
 		        if(scrollTop >= trigger){
