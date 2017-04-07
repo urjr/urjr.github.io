@@ -1,6 +1,6 @@
 .menu, .about-content {
 	.social-icons {
-		margin-top: 25px;
+		margin: 25px auto;
 		display: inline-block;
 		li {
 			display: inline-block;
@@ -34,6 +34,18 @@
 			}
 			a.email {
 				background-image: url('/img/menu/menu_email.svg');
+			}
+		}
+	}
+}
+
+.about-content {
+	.social-icons {
+		width: 100%;
+		li {
+			width: 18%;
+			a {
+				width: 100%;
 			}
 		}
 	}
