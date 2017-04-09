@@ -5,10 +5,25 @@
 		font-size: 10em;
 	}
 
+	a {
+		color: #2ecc71; //get from config file
+		text-shadow: 0 1px rgba(black, 0.25);
+		@include transition(0.25s);
+
+		&:hover {
+			color: #000;
+			text-shadow: none;
+		}
+	}
+
 	.panel-right {
 		p {
 			font-size: 1.25em;
 		}
+	}
+
+	img {
+		box-shadow: 0 2px 4px rgba(black, 0.25);
 	}
 }
 
