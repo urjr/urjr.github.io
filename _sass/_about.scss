@@ -7,26 +7,45 @@
 
 	a {
 		color: #2ecc71; //get from config file
-		text-shadow: 0 1px rgba(black, 0.25);
+		// text-shadow: 0 1px rgba(black, 0.25);
 		@include transition(0.25s);
 
 		&:hover {
-			color: #000;
+			color: darken(#2ecc71, 25%);
 			text-shadow: none;
 		}
 	}
 
 	.panel-right {
-		p {
+		.skills {
 			font-size: 1.25em;
+		}
+
+		.bio {
+			font-size: 1em;
 		}
 	}
 
 	img {
 		box-shadow: 0 2px 4px rgba(black, 0.25);
 	}
+
+	.design-skills,
+	.software-skills,
+	.dev-skills {
+		margin-top: 1em;
+	}
 }
 
 @include media-query($on-tablet){
-
+	.about-content {
+		.panel-left {
+			// position: fixed;
+		}
+		.panel-right {
+			.bio {
+				font-size: 1.25em;
+			}
+		}
+	}
 }
