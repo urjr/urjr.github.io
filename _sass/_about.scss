@@ -1,6 +1,8 @@
 .about-content {
 	padding-top: 2em;
 
+	@include animation(fade-in 1.5s ease-in 0.25s both);
+
 	h1 {
 		font-size: 10em;
 	}
@@ -17,7 +19,7 @@
 	}
 
 	.panel-right {
-		@include linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,1) 100%);
+		@include linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 100%);
 
 		.skills {
 			font-size: 1.25em;
@@ -50,4 +52,17 @@
 			}
 		}
 	}
+}
+
+@include keyframes(fade-in){
+  0% {
+    // @include transform(scale(2));
+    // @include filter(blur(2px));
+    opacity: 0;
+  }
+  100% {
+    // @include transform(scale(1));
+    // @include filter(blur(0px));
+    opacity: 1;
+  }
 }
