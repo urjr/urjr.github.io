@@ -42,7 +42,7 @@ $(function() {
 
     init: function(){
       main.smoothScroll();
-      main.noTouch();
+      // main.noTouch();
     },
   }
 
