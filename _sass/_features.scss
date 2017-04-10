@@ -69,6 +69,11 @@
 .smarking {
 	background: #9b59b6;
 	margin-bottom: 200px;
+	.background {
+		top: 45%;
+		background: url("/img/features/smarking/smarking-dash.png");
+		background-position: right center;
+	}
 }
 
 .features .background {
@@ -107,8 +112,10 @@
 	}
 
 	.smarking {
-		background: #9b59b6;
 		margin-bottom: 400px;
+		.background {
+			top: 40%;
+		}
 	}
 }
 
