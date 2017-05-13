@@ -1,0 +1,10 @@
+.work {
+	margin-top: 57px;
+}
+
+
+@include media-query($on-tablet) { 
+	.work {
+		margin-top: 104px;
+	}
+}
