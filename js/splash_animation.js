@@ -15,7 +15,7 @@ $(function(){
 		init: function(speed){
 			splashAnim.hoverEffect('.splash-me','.animation-me', speed);
 			splashAnim.hoverEffect('.splash-design','.animation-design', speed);
-			splashAnim.hoverEffect('.splash-nyc','.animation-nyc', speed);
+			splashAnim.hoverEffect('.splash-boston','.animation-boston', speed);
 			splashAnim.hoverEffect('.splash-mail','.animation-mail', speed);
 			splashAnim.hoverEffect('.splash-adhawk','.animation-adhawk', speed);
 		},
