@@ -29,15 +29,15 @@
 
 	.boston-citgo {
 		z-index: 90;
-		width:40%;
-		bottom:9%;
-		left:30%;
+		width:35%;
+		bottom:0;
+		left:40%;
 	}
 
-	.boston-wtc {
-		width:20%;
-		left:25%;
-		bottom:0;
+	.boston-hancock {
+		width:40%;
+		left:15%;
+		bottom:25%;
 		z-index:80;
 		@include animation-name(pulse);
 		@include animation-duration(1.75s);
