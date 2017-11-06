@@ -29,14 +29,14 @@
 
 	.boston-citgo {
 		z-index: 90;
-		width:35%;
-		bottom:0;
-		left:40%;
+		width:30%;
+		bottom:5%;
+		left:45%;
 	}
 
 	.boston-hancock {
-		width:40%;
-		left:15%;
+		width:32%;
+		left:17%;
 		bottom:25%;
 		z-index:80;
 		@include animation-name(pulse);
@@ -46,7 +46,7 @@
 		@include animation-direction(alternate);
 	}
 
-	.boston-chrystler {
+	.boston-prudential {
 		width:20%;
 		left:55%;
 		bottom:0;
