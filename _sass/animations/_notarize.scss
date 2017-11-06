@@ -16,14 +16,14 @@
 
 	.notarize-seal {
 		@include animation-name(logo-float);
-		@include animation-duration(8s);
+		@include animation-duration(10s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(linear);
 	}
 
 	.notarize-logo {
 		@include animation-name(logo-breathe);
-		@include animation-duration(1s);
+		@include animation-duration(2s);
 		@include animation-iteration-count(infinite);
 		@include animation-timing-function(ease-in-out);
 		@include animation-direction(alternate);
