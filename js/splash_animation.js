@@ -17,7 +17,7 @@ $(function(){
 			splashAnim.hoverEffect('.splash-design','.animation-design', speed);
 			splashAnim.hoverEffect('.splash-boston','.animation-boston', speed);
 			splashAnim.hoverEffect('.splash-mail','.animation-mail', speed);
-			splashAnim.hoverEffect('.splash-adhawk','.animation-adhawk', speed);
+			splashAnim.hoverEffect('.splash-notarize','.animation-notarize', speed);
 		},
 	}
 
