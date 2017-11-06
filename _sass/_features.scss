@@ -6,9 +6,7 @@
 	overflow: hidden;
 
 	.feature-description {
-		background: rgba(#454545, .95);
 		padding: 1em;
-		width: 60%;
 		top: 30%;
 		position: absolute;
 		z-index: 420;
@@ -19,6 +17,11 @@
 
 		&.left {
 			left: 0;
+
+			.link-text {
+				float: left;
+			}
+
 			h1,h2,h3,h4,p {
 				text-align: left;
 			}
@@ -26,19 +29,29 @@
 
 		&.right {
 			right: 0;
+
+			.link-text {
+				float: right;
+			}
+
 			h1,h2,h3,h4,p {
 				text-align: right;
 			}
 		}
 
-		a {
-			h4 {
-				opacity: 0.75;
+		.link-text {
+			color: #fff;
+			padding: 1em;
+			border: 1px solid #fff;
+			border-radius: 3px;
+			text-decoration: none;
+			@include transition(0.25s);
 
-				&:hover {
-					opacity: 1;
-					text-decoration: none;
-				}
+			&:hover {
+				background: rgba(black, 0.1);
+			}
+			&:active {
+				background: rgba(black, 0.25);
 			}
 		}
 
@@ -50,10 +63,18 @@
 
 .notarize {
 	background: #2A86E1;
+
+	.feature-description {
+		background: rgba(#2A86E1, 0.25);
+	}
 }
 
 .adhawk-app {
 	background: #1CCB8D;
+
+	.feature-description {
+		background: rgba(#1CCB8D, 0.75);
+	}
 
 	.background {
 		top: 60%;
@@ -64,6 +85,10 @@
 .adhawk-website {
 	background: $brand-color;
 
+	.feature-description {
+		background: rgba($brand-color, 0.75);
+	}
+
 	.background {
 		top: 85%;
 		background: url("/img/features/adhawk_website/website.png");
@@ -73,6 +98,11 @@
 .smarking {
 	background: #9b59b6;
 	margin-bottom: 200px;
+
+	.feature-description {
+		background: rgba(#9b59b6, 0.75);
+	}
+
 	.background {
 		top: 45%;
 		background: url("/img/features/smarking/smarking-dash.png");
