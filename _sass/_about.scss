@@ -19,6 +19,10 @@
 		}
 	}
 
+	.panel-left {
+		position: relative;
+	}
+
 	.panel-right {
 		@include linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 100%);
 
@@ -31,7 +35,9 @@
 		}
 	}
 
-	img {
+	.img-box {
+		overflow: hidden;
+		height: 45vh;
 		box-shadow: 0 2px 4px rgba(black, 0.25);
 	}
 
@@ -44,14 +50,21 @@
 
 @include media-query($on-tablet){
 	.about-content {
+
 		.panel-left {
 			// position: fixed;
 		}
+
 		.panel-right {
 			.bio {
 				font-size: 1.25em;
 			}
 		}
+
+		.img-box {
+			height: auto;
+		}
+
 	}
 }
 
