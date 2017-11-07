@@ -167,9 +167,11 @@
 
 @include media-query($on-xl-desktop) {
 	.features {
+		min-height:800px;
 
 		.feature-description {
 			top: 7%;
+			width: 45%;
 		}
 
 		.feature-title {
