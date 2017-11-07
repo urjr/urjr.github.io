@@ -77,10 +77,6 @@
 		background: rgba(#1CCB8D, 0.75);
 	}
 
-	.background {
-		top: 60%;
-		background: url("/img/features/adhawk_app/phone.png");
-	}
 }
 
 .adhawk-website {
@@ -90,10 +86,6 @@
 		background: rgba($brand-color, 0.75);
 	}
 
-	.background {
-		top: 85%;
-		background: url("/img/features/adhawk_website/website.png");
-	}
 }
 
 .smarking {
@@ -104,11 +96,6 @@
 		background: rgba(#9b59b6, 0.75);
 	}
 
-	.background {
-		top: 45%;
-		background: url("/img/features/smarking/smarking-dash.png");
-		background-position: right center;
-	}
 }
 
 .features .background {
@@ -127,32 +114,23 @@
 			width: 40%;
 			top: 20%;
 
+			&.left {
+				left: 5%;
+			}
+
+			&.right {
+				right: 5%;
+			}
+
 			.feature-text {
 				display: block;
 			}
 		}
 	}
 
-	.adhawk-app {
-		.background {
-			top: 20%;
-			background-size: cover;
-		}
-	}
-
-	.adhawk-website {
-		.background {
-			top: 45%;
-		}
-	}
-
 	.smarking {
 		box-shadow: 0 5px 10px rgba(black, 0.25);
-		
 		margin-bottom: 400px;
-		.background {
-			top: 40%;
-		}
 	}
 }
 
@@ -160,8 +138,41 @@
 	.features {
 		height: 800px;
 
-		.background {
-			height: 120vh;
+		.feature-description {
+			top: 15%;
+		}
+
+		.feature-title {
+			font-size: 3em;
+		}
+
+		.feature-text {
+			font-size: 1.3em;
+		}
+
+		.link-text {
+			margin-top: 1em;
+		}
+	}
+}
+
+@include media-query($on-xl-desktop) {
+	.features {
+
+		.feature-description {
+			top: 10%;
+		}
+
+		.feature-title {
+			font-size: 3.5em;
+		}
+
+		.feature-text {
+			font-size: 1.75em;
+		}
+
+		.link-text {
+			font-size: 1.25em;
 		}
 	}
 }
