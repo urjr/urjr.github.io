@@ -14,6 +14,7 @@
 
 		.feature-text {
 			display: none;
+			text-shadow: 0 -1px 0 rgba(black, 0.5);
 		}
 
 		&.left {
@@ -59,6 +60,10 @@
 		h1,h2,h3,h4,p {
 			color: #fff;
 		}
+	}
+
+	.feature-title {
+		text-shadow: 0 -1px 0 rgba(black, 0.5);
 	}
 }
 
@@ -126,6 +131,10 @@
 				display: block;
 			}
 		}
+
+		.feature-title {
+			font-size: 2em;
+		}
 	}
 
 	.smarking {
@@ -160,7 +169,7 @@
 	.features {
 
 		.feature-description {
-			top: 10%;
+			top: 7%;
 		}
 
 		.feature-title {
