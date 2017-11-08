@@ -68,37 +68,51 @@
 }
 
 .notarize {
-	background: #2A86E1;
+
+	background: url('/img/features/notarize/notarize.png'), #2A86E1;
+	background-size: 85% auto;
+	background-repeat: no-repeat;
+	background-position: left center;
 
 	.feature-description {
-		background: rgba(#2A86E1, 0.25);
+		background: rgba(#2A86E1, 0.6);
 	}
 }
 
 .adhawk-app {
-	background: #1CCB8D;
+	background: url('/img/features/adhawk_app/phone.png'), #1CCB8D;
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+	background-position: right center;
 
 	.feature-description {
-		background: rgba(#1CCB8D, 0.75);
+		background: rgba(#1CCB8D, 0.6);
 	}
 
 }
 
 .adhawk-website {
-	background: $brand-color;
+	background: url('/img/features/adhawk_website/website.png'), $brand-color;
+	background-size: 95% auto;
+	background-repeat: no-repeat;
+	background-position: left center;
 
 	.feature-description {
-		background: rgba($brand-color, 0.75);
+		background: rgba($brand-color, 0.6);
 	}
 
 }
 
 .smarking {
-	background: #9b59b6;
 	margin-bottom: 200px;
 
+	background: url('/img/features/smarking/smarking-dash.png'), $blog-color;
+	background-size: 90% auto;
+	background-repeat: no-repeat;
+	background-position: right center;
+
 	.feature-description {
-		background: rgba(#9b59b6, 0.75);
+		background: rgba(#9b59b6, 0.6);
 	}
 
 }
@@ -136,6 +150,13 @@
 			font-size: 2em;
 		}
 	}
+	
+	.notarize,
+	.adhawk-app,
+	.adhawk-website,
+	.smarking {
+		background-size: 50% auto;
+	}
 
 	.smarking {
 		box-shadow: 0 5px 10px rgba(black, 0.25);
@@ -169,17 +190,12 @@
 	.features {
 		min-height:800px;
 
-		.feature-description {
-			top: 7%;
-			width: 45%;
-		}
-
 		.feature-title {
 			font-size: 3.5em;
 		}
 
 		.feature-text {
-			font-size: 1.75em;
+			font-size: 1.5em;
 		}
 
 		.link-text {

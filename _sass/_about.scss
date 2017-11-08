@@ -48,23 +48,22 @@
 	}
 }
 
-@include media-query($on-tablet){
+@include media-query($on-tablet) {
 	.about-content {
-
-		.panel-left {
-			// position: fixed;
-		}
 
 		.panel-right {
 			.bio {
 				font-size: 1.25em;
 			}
 		}
+	}
+}
 
+@include media-query($on-tablet-extra) {
+	.about-content {
 		.img-box {
 			height: auto;
 		}
-
 	}
 }
 
