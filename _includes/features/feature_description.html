@@ -9,8 +9,8 @@
 			<span style="color:{{ include.ctacolor }};">{{ include.cta }}</span>
 		</a>
 
-		{%  if include.casestudyurl %}
-			<a href="{{ include.casestudyurl }}" class="link-text case-study">
+		{%  if include.casestudyurl %} <!-- {{ include.casestudyurl }} -->
+			<a href="#" class="link-text case-study" data-toggle="modal" data-target="#comingSoon">
 				<span> View Case Study</span>
 			</a>
 		{% endif %}
