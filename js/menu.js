@@ -27,6 +27,8 @@ $(function(){
 			  } else {
 			  	$('.hamburger .line').css('background-color', '#fff');
 			  }
+			}, {
+				offset: '30px',
 			});
 
 			$('#notarize').waypoint(function(direction) {
@@ -35,6 +37,8 @@ $(function(){
 			  } else {
 			  	$('.hamburger .line').css('background-color', '#3498db');
 			  }
+			}, {
+				offset: '30px',
 			});
 		},
 
