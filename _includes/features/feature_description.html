@@ -2,7 +2,13 @@
 	<h3 class="feature-title">{{ include.title }}</h3>
 	<p class="feature-text">{{ include.text }}</p>
 
-	<a href="{{ include.url }}" class="link-text">
+	<a href="{{ include.url }}" class="link-text primary" target="blank">
 		<span>{{ include.cta }}</span>
 	</a>
+
+	{%  if include.casestudyurl %}
+		<a href="{{ include.casestudyurl }}" class="link-text case-study">
+			<span> View Case Study</span>
+		</a>
+	{% endif %}
 </div>	
