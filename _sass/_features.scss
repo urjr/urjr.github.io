@@ -151,7 +151,6 @@
 
 		.feature-description {
 			width: 40%;
-			top: 20%;
 
 			.feature-text {
 				display: block;
@@ -203,10 +202,6 @@
 @include media-query($on-desktop) {
 	.features {
 		height: 800px;
-
-		.feature-description {
-			top: 15%;
-		}
 
 		.feature-title {
 			font-size: 3em;
