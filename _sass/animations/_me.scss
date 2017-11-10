@@ -30,14 +30,14 @@
 
 	.me-bicep {
 		bottom: 30%;
-		left: 23%;
+		left: 26.5%;
 		width: 14%;
-		@include transform(rotate(-70deg));
+		@include transform(rotate(-64deg));
 		z-index: 10;
 	}
 
 	.me-forearm {
-		bottom: 53%;
+		bottom: 51.75%;
 		width: 14%;
 		z-index:60;
 		@include animation-name(hand-wave);
@@ -62,11 +62,11 @@
 @include keyframes(hand-wave) {
 	0% {
 		@include transform(rotate(30deg));
-		left:23.5%;
+		left:18.5%;
 	}
 
 	100% {
 		@include transform(rotate(-30deg));
-		left:10.5%;
+		left:5.5%;
 	}
 }
