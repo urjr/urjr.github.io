@@ -10,14 +10,14 @@
 	}
 
 	.me-head {
-		width:40%;
-		left: 37.5%;
+		width:50%;
+		left: 33%;
 		bottom: 55%;
 		z-index: 60;
 		@include animation-name(head-nod);
 		@include animation-duration(1s);
 		@include animation-iteration-count(infinite);
-		@include animation-timing-function(ease);
+		@include animation-timing-function(ease-in-out);
 		@include animation-direction(alternate);
 	}
 
@@ -29,16 +29,15 @@
 	}
 
 	.me-bicep {
-		bottom: 35%;
-		left: 28%;
+		bottom: 30%;
+		left: 23%;
 		width: 14%;
-		@include transform(rotate(-45deg));
+		@include transform(rotate(-70deg));
 		z-index: 10;
 	}
 
 	.me-forearm {
-		bottom: 60%;
-		left: 17.25%;
+		bottom: 53%;
 		width: 14%;
 		z-index:60;
 		@include animation-name(hand-wave);
