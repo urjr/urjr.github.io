@@ -105,11 +105,11 @@
 
 .smarking {
 	margin-bottom: 200px;
-
 	background: url('/img/features/smarking/smarking-dash.png'), $blog-color;
 	background-size: 90% auto;
 	background-repeat: no-repeat;
 	background-position: right center;
+	box-shadow: 0 5px 10px rgba(black, 0.25);
 
 	.feature-description {
 		background: rgba(#9b59b6, 0.6);
@@ -159,7 +159,6 @@
 	}
 
 	.smarking {
-		box-shadow: 0 5px 10px rgba(black, 0.25);
 		margin-bottom: 400px;
 	}
 }
@@ -201,5 +200,9 @@
 		.link-text {
 			font-size: 1.25em;
 		}
+	}
+
+	.notarize {
+		background-size: auto 90%;
 	}
 }
