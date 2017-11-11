@@ -26,14 +26,14 @@
   		}
 	}
 
-	.about {
+	.about-footer {
 		background: $about-color;
 		&:hover {
 			background: darken($about-color, 5%);
 		}
 	}
 
-	.work {
+	.work-footer {
 		background: $work-color;
 		&:hover {
 			background: darken($work-color, 5%);
