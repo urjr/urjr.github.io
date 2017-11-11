@@ -1,0 +1,15 @@
+---
+layout: default
+title: Ulises Reyes | Work
+favcolor: e67e22
+permalink: /work/
+navtitle: "Work"
+---
+<div class="work">
+	{% include work/nav_back.html %}
+	{% include hamburger_button.html color="e67e22" %}
+	{% include menu.html active="work" %}
+	{% for post in site.posts %}	
+		{% include work/work_thumb.html %}
+	{% endfor %}
+</div>
