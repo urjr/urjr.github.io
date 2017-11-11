@@ -18,6 +18,7 @@
 
 	.summary-text {
 		padding-top: 15%;
+		padding-left: 10%;
 		a {
 			color: rgba(black, 0.5);
 			text-decoration: underline;
@@ -89,6 +90,11 @@
 		max-height: 700px;
 		.summary-text {
 			padding-top: 25%;
+			padding-left: 5%;
+
+			h2 {
+				font-size: 2.75em;
+			}
 		}
 
 		.summary-image{
@@ -116,16 +122,6 @@
 	.summary{
 		max-height: 800px;
 
-		.summary-text {
-			h2 {
-				font-size: 2em;
-			}
-
-			h4 {
-				font-size: 1.25em;
-			}
-		}
-
 		.summary-image {
 			.phone{
 				width: 85%;
@@ -141,8 +137,10 @@
 @include media-query($on-xl-desktop) {
 	.summary {
 		.summary-text {
+			padding-top: 20%;
+
 			h2 {
-				font-size: 2.5em;
+				font-size: 3.25em;
 			}
 
 			h4 {
