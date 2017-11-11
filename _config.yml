@@ -27,8 +27,10 @@ color:
 collections:
   case_studies:
     output: true
+    permalink: /work/:name
   projects:
     output: true
+    permalink: /work/:name
 
 # Build settings
 markdown: kramdown
