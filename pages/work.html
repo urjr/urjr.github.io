@@ -9,7 +9,12 @@ navtitle: "Select a project to view"
 	{% include work/work_menu.html %}
 	{% include hamburger_button.html color="e67e22" %}
 	{% include menu.html active="work" %}
-	{% for post in site.posts %}	
+
+	{% for project in site.case_studies %}	
+		{% include work/work_thumb.html %}
+	{% endfor %}
+
+	{% for project in site.projects %}	
 		{% include work/work_thumb.html %}
 	{% endfor %}
 </div>

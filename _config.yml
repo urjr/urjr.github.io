@@ -22,6 +22,14 @@ color:
   blog_color: "9b59b6"
   sandbox_color: "7f8c8d"
 
+# Collection
+
+collections:
+  case_studies:
+    output: true
+  projects:
+    output: true
+
 # Build settings
 markdown: kramdown
 
