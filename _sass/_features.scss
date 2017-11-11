@@ -137,14 +137,6 @@
 
 }
 
-.features .background {
-	position: relative;
-	width: 100%;
-	height: 100vh ;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
 @include media-query($on-tablet) {
 	.features {
 		height: 700px;
@@ -228,9 +220,5 @@
 		.link-text {
 			font-size: 1.25em;
 		}
-	}
-
-	.notarize {
-		background-size: auto 90%;
 	}
 }
