@@ -23,7 +23,7 @@ $about-color: #2ecc71;
 $work-color: #e67e22;
 $blog-color: #9b59b6;
 $sandbox-color: #7f8c8d;
-$menu-close-color: red;
+$menu-close-color: #e74c3c;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -35,7 +35,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-$on-tablet:        600px;
+$on-tablet:        768px;
 $on-desktop:       992px;
 $on-xl-desktop:    1200px;
 
@@ -54,6 +54,10 @@ $on-xl-desktop:    1200px;
     }
 }
 
+// @mixin bg-gradient($string) {
+    
+// }
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
 		"fonts",
@@ -68,8 +72,9 @@ $on-xl-desktop:    1200px;
         "animations/base_animation",
         "animations/me",
         "animations/nyc",
+        "animations/boston",
         "animations/design",
-        "animations/adhawk",
+        "animations/notarize",
         "animations/mail",
         "placeholder",
         "hamburger",
@@ -77,5 +82,6 @@ $on-xl-desktop:    1200px;
         "features",
         "landing_footer",
         "social_icons",
-        "about"
+        "about",
+        "modal"
 ;
