@@ -1,1 +1,14 @@
-<a id="work-menu" class="work-menu" href="#">{{ page.navtitle }}</a>
+<a id="work-menu-btn" href="#">{{ page.navtitle }}</a>
+
+<div id="work-menu-backdrop"></div>
+<div id="work-menu-list">
+	<nav>
+		{% for project in site.case_studies %}	
+			<a href="{{ project.url }}">{{ project.title }}</a>
+		{% endfor %}
+
+		{% for project in site.projects %}	
+			<a href="{{ project.url }}">{{ project.title }}</a>
+		{% endfor %}
+	</nav>
+</div>
