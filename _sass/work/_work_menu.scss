@@ -13,7 +13,6 @@
 	@include transition(0.25s);
 
 	margin: 0;
-
 	right:3em;
 	top:1em;
 
@@ -21,6 +20,11 @@
 		@include transform(translateY(-5px));
 			box-shadow: 0 5px 10px rgba(#000, 0.25);
 
+	}
+
+	span {
+		font-size: 0.75em;
+		margin-left:1em;
 	}
 }
 
@@ -30,6 +34,7 @@
 	background: rgba(#000, 0.85);
 	width: 100vw;
 	height: 100vh;
+	display: none;
 }
 
 #work-menu-list {
@@ -39,6 +44,7 @@
 	right: 3em;
 	top: 3em;
 	box-shadow: 0 2px 4px rgba(#000, 0.75);
+	display: none;
 
 	nav {
 		list-style-type: none;

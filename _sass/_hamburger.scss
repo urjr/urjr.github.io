@@ -26,7 +26,7 @@
 	}
 
 	&:active {
-		top: 1.5em;
+		// top: 1.5em;
 		@include transition(all 0.15s);
 		.line {
 			box-shadow: 0 1px 0 rgba(black, 0.5);
@@ -48,14 +48,14 @@
 		}
 
 		&:hover {
-			top: 1.5em;
+			// top: 1.5em;
 			.line {
 				height: 13.333333333px;
 			}
 		}
 
 		&:active {
-			top: 1.6em;
+			// top: 1.6em;
 		}
 	}
 }
