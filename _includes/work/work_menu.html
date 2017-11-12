@@ -2,8 +2,8 @@
 <a id="work-menu-home" href="/work"><span class="glyphicon glyphicon-home"></span></a>
 
 <div id="work-menu-backdrop"></div>
-<div id="work-menu-list">
-	<nav>
+<div id="work-menu-list" class="nano">
+	<nav class="nano-content">
 		{% for project in site.case_studies %}	
 			<li><a href="{{ project.url }}">{{ project.title }}</a></li>
 		{% endfor %}
