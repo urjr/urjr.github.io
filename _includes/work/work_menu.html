@@ -5,11 +5,11 @@
 <div id="work-menu-list" class="nano">
 	<nav class="nano-content">
 		{% for project in site.case_studies %}	
-			<li><a href="{{ project.url }}">{{ project.title }}</a></li>
+			<li><a href="{{ project.url }}" class="{% if project.title == page.title  %}active{% endif %}">{{ project.title }}</a></li>
 		{% endfor %}
 
 		{% for project in site.projects %}	
-			<li><a href="{{ project.url }}">{{ project.title }}</a></li>
+			<li><a href="{{ project.url }}" class="{% if project.title == page.title  %}active{% endif %}">{{ project.title }}</a></li>
 		{% endfor %}
 	</nav>
 </div>

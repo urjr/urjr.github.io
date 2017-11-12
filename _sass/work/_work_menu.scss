@@ -69,12 +69,12 @@
 	background: #fff;
 	position: fixed;
 	z-index: 900;
-	max-height: 75vh;
+	height: 75vh;
+	width: 75vw;
 	right: 3em;
 	top: 3em;
 	box-shadow: 0 2px 4px rgba(#000, 0.75);
 	opacity: 0;
-	width: 75%;
 
 	nav {
 		list-style-type: none;
@@ -88,6 +88,11 @@
 				display: block;
 				@include transition(0.1s);
 				font-size: 1.25em !important;
+
+				&.active {
+					color: $work-color !important;
+					background: #fff !important;
+				}
 
 				&:hover {
 					background: #000;
