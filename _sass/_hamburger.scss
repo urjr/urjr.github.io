@@ -18,19 +18,23 @@
 
 	&:hover {
 		cursor: pointer;
+		@include transform(scale(1.03));
+
 		.line {
 			margin: 0;
-			height: 8.333333333px;
+			height: 8.4px;
 			box-shadow: 0 10px 10px rgba(black, 0.25);
+			margin-top: -0.5px;
 		}
 	}
 
 	&:active {
-		// top: 1.5em;
+		@include transform(scale(1));
 		@include transition(all 0.15s);
 		.line {
 			box-shadow: 0 1px 0 rgba(black, 0.5);
 			@include transition(all 0.15s);
+			margin-top: 0;
 		}
 	}
 }
@@ -50,7 +54,7 @@
 		&:hover {
 			// top: 1.5em;
 			.line {
-				height: 13.333333333px;
+				height: 13.4px;
 			}
 		}
 
