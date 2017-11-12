@@ -34,6 +34,28 @@
 	}
 }
 
+#work-menu-home {
+	color: $work-color;
+	text-shadow: 0 1px 0 rgba(#000, 0.5);
+	position: fixed;
+	font-size: 25px;
+	top: 16px;
+	left: 16px;
+	z-index: 1000;
+	@include transition(0.5s);
+
+	&:hover {
+		@include transform(scale(1.1));
+		text-shadow: 0 5px 10px rgba(#000, 0.25);
+	}
+
+	&:active {
+		@include transform(scale(1));
+		@include transition(0.15s);
+		text-shadow: 0 1px 0 rgba(#000, 0.5);
+	}
+}
+
 #work-menu-backdrop {
 	position: fixed;
 	z-index: 800;
@@ -84,6 +106,12 @@
 
 	#work-menu-list {
 		font-size: 1.75em;
+	}
+
+	#work-menu-home {
+		font-size: 40px;
+		top: 32px;
+		left: 32px;
 	}
 }
 
