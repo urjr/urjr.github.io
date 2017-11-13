@@ -1,0 +1,25 @@
+.work-thumbnail {
+	background: $brand-color;
+	border: 1px solid black;
+	width: 100vw;
+	height: 60vh;
+}
+
+@include media-query($on-tablet) {
+	.work-thumbnail {
+		height: 40vh;
+		width: 50vw;
+	}
+}
+
+@include media-query($on-desktop) {
+	.work-thumbnail {
+		width: 33.333333333333vw;
+	}
+}
+
+@include media-query($on-xl-desktop) {
+	.work-thumbnail {
+		width: 25vw;
+	}
+}
