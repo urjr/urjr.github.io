@@ -25,9 +25,8 @@ color:
 # Collection
 
 collections:
-  case_studies:
+  pages:
     output: true
-    permalink: /work/:name
   projects:
     output: true
     permalink: /work/:name
@@ -38,4 +37,4 @@ markdown: kramdown
 # Server Config options
 livereload: true     # You no longer need to include --livereload
 
-gems: [bourbon, neat]
+plugins: [bourbon, neat]
