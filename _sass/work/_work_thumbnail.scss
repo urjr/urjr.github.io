@@ -12,18 +12,43 @@
 	&:hover {
 		@include transform(scale(1.05));
 		box-shadow: 0 0 30px rgba(#000, 0.5);
+
+		.thumbnail-title {
+			text-decoration: none !important;
+		}
 	}
 
 	&.bookend {
 		background: #000;
 		display: none;
+
 		.thumbnail-title {
 			color: #fff;
+		}
+
+		&:hover {
+			@include animation-name(rainbow-pulse);
+			@include animation-duration(1s);
+			@include animation-iteration-count(infinite);
+			@include animation-timing-function(ease-in-out);
+
+			.thumbnail-title {
+				background: #fff;
+				color: #000;
+				padding: 0.5em;
+				border-radius: 3px;
+				box-shadow: 0 1px 0 rgba(#000, 0.5);
+			}
 		}
 	}
 
 	.thumbnail-title {
 		color: black;
+		@include transition(0.25s);
+
+		&:hover {
+			text-decoration: none !important;
+		}
 	}
 }
 
@@ -72,3 +97,41 @@
 		}
 	}
 }
+
+@include keyframes(rainbow-pulse) {
+	0% {
+		background: #3498db;
+	}
+
+	16.666666667% {
+		background: #2ecc71;
+	}
+
+	33.333333334% {
+		background: #e67e22;
+	}
+
+	50% {
+		background: #9b59b6;
+	}
+
+	66.666666668% {
+		background: #7f8c8d;
+	}
+
+	83.333333335% {
+		background: #e74c3c;
+	}
+
+	100% {
+		background: #3498db;
+	}
+}
+
+
+$home-color: #3498db;
+$about-color: #2ecc71;
+$work-color: #e67e22;
+$blog-color: #9b59b6;
+$sandbox-color: #7f8c8d;
+$menu-close-color: #e74c3c;
