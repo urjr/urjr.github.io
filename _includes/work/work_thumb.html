@@ -1,5 +1,5 @@
-<a href="{{ project.url }}">
-	<div class="work-thumbnail">
-		
+<a href="{{ project.url }}{{ include.url }}">
+	<div class="work-thumbnail{% if include.bookend %} bookend{% endif %}">
+		<h3 class="thumbnail-title">{{ project.title }}{{ include.copy }}</h3>
 	</div>
 </a>

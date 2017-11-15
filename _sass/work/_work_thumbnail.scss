@@ -3,6 +3,28 @@
 	border: 1px solid black;
 	width: 100vw;
 	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@include transition(transform 0.15s);
+
+	&:hover {
+		@include transform(scale(1.05));
+		box-shadow: 0 0 30px rgba(#000, 0.5);
+	}
+
+	&.bookend {
+		background: #000;
+		display: none;
+		.thumbnail-title {
+			color: #fff;
+		}
+	}
+
+	.thumbnail-title {
+		color: black;
+	}
 }
 
 @include media-query($on-tablet) {
@@ -15,11 +37,38 @@
 @include media-query($on-desktop) {
 	.work-thumbnail {
 		width: 33.333333333333vw;
+
+		.thumbnail-title {
+			opacity: 0;
+		}
+
+		&:hover {
+			.thumbnail-title {
+				opacity: 1;
+			}
+		}
+
+		&.bookend {
+			display: inline-flex;
+
+			&:hover {
+				@include transform(scale(1));
+				box-shadow: none;
+			}
+
+			.thumbnail-title {
+				opacity: 1;
+			}
+		}
 	}
 }
 
 @include media-query($on-xl-desktop) {
 	.work-thumbnail {
 		width: 25vw;
+
+		&.bookend {
+			width: 50vw;
+		}
 	}
 }

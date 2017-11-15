@@ -18,4 +18,6 @@ navtitle: "Select a project"
 	{% for project in site.projects %}	
 		{% include work/work_thumb.html %}
 	{% endfor %}
+
+	{% include work/work_thumb.html bookend="true" copy="Filler Text"%}
 </div>
