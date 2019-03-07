@@ -738,6 +738,12 @@ var simplemaps_worldmap_mapdata={
       name: "San Francisco, CA",
       description: "In the early part of 2015, Ulises lived in the Bay Area working his first job out of grad school. After 6 months with the company, Ulises packed his bags and moved to New York, where he was reunited with Priyanka. (New York was the first city they lived together in!) <img src=\"https://i.imgur.com/05aaDaL.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
+    "4": {
+      lat: 39.952,
+      lng: -75.162,
+      name: "Philadelphia, PA",
+      description: "Philadelphia is where Priyanka’s parents live. This is where Priyanka and Ulises first proposed the idea of marriage to Priyanka’s parents  in May 2017! Great news - they said yes! <img src=\"https://i.imgur.com/HEfNVvt.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
+    },
     "6": {
       lat: 18.472,
       lng: -69.891,
@@ -760,13 +766,13 @@ var simplemaps_worldmap_mapdata={
       lat: 30.843,
       lng: 75.417,
       name: "Punjab, India",
-      description: "Priyanka’s family comes from Punjab, in northern India. She has never been there, but Priyanka and Ulises hope to visit one day! Many of the beautiful traditions you will see at our wedding come from India."
+      description: "Priyanka’s family comes from Punjab, in northern India. Many of the beautiful traditions you will see at our wedding come from India. Priyanka will visit Punjab for the first time in summer 2019. She can’t wait to learn Punjabi....and do some wedding shopping!"
     },
     "10": {
       lat: 25.775,
       lng: -80.198,
       name: "Miami, Florida",
-      description: "Ulises was raised in Miami. Most of his family still lives there, and we are thrilled to host you in this beautiful city!"
+      description: "Ulises was raised in Miami. Most of his family still lives there, and we are thrilled to host you in this beautiful city! <img src=\"https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/1521887_2586671114315_674262000_n.jpg?_nc_cat=102&_nc_ht=scontent-lax3-2.xx&oh=28536d6efa49b67fc94cda42c8d69885&oe=5D2503A0\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "11": {
       lat: 55.597,
