@@ -718,25 +718,25 @@ var simplemaps_worldmap_mapdata={
       lat: 40.439,
       lng: -79.997,
       name: "Pittburgh, Pennsylvania",
-      description: "Priyanka and Ulises met in 2011, when Priyanka was a student at the University of Pittsburgh. They loved visiting the Carnegie Library and the Cathedral of Learning."
+      description: "Priyanka and Ulises met in 2011, when Priyanka was a student at the University of Pittsburgh. They loved visiting the Carnegie Library and the Cathedral of Learning. <img src=\"https://i.imgur.com/AHGqzgL.jpg\" width=\"100%\" style=\"margin-top: 15px;\"/>"
     },
     "1": {
       lat: 42.359,
       lng: -71.057,
       name: "Boston, Massachusetts",
-      description: "Ulises was a student at MIT for the first four years of Ulises and Priyanka’s relationship. He never predicted that he would return there for another two years when it was Priyanka’s turn to be a student at Harvard!"
+      description: "Ulises was a student at MIT for the first four years of Ulises and Priyanka’s relationship. He never predicted that he would return there for another two years when it was Priyanka’s turn to be a student at Harvard! <img src=\"https://i.imgur.com/duHlfqI.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "2": {
       lat: 40.715,
       lng: -74.007,
       name: "New York City, New York",
-      description: "Ulises spent his early years in the Bronx before moving to Miami.\nPriyanka moved to Brooklyn, New York in 2013 to become a middle school reading teacher. Two years later, Ulises joined her in New York. New York is special to them because it is the first city that they lived in together!"
+      description: "Ulises spent his early years in the Bronx before moving to Miami.\nPriyanka moved to Brooklyn, New York in 2013 to become a middle school reading teacher. Two years later, Ulises joined her in New York. New York is special to them because it is the first city that they lived in together! <img src=\"https://i.imgur.com/x3x4ahE.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "3": {
       lat: 37.777,
       lng: -122.42,
       name: "San Francisco, CA",
-      description: "In the early part of 2015, Ulises lived in the Bay Area working his first job out of grad school. After 6 months with the company, Ulises packed his bags and moved to New York, where he was reunited with Priyanka. (New York was the first city they lived together in!)"
+      description: "In the early part of 2015, Ulises lived in the Bay Area working his first job out of grad school. After 6 months with the company, Ulises packed his bags and moved to New York, where he was reunited with Priyanka. (New York was the first city they lived together in!) <img src=\"https://i.imgur.com/05aaDaL.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "6": {
       lat: 18.472,
@@ -748,7 +748,7 @@ var simplemaps_worldmap_mapdata={
       lat: 54.978,
       lng: -1.612,
       name: "England, UK",
-      description: "Priyanka was born in England, and most of her family still lives there. In July 2018, Ulises got to visit England for Priyanka’s grandma’s 90th birthday!"
+      description: "Priyanka was born in England, and most of her family still lives there. In July 2018, Ulises got to visit England for Priyanka’s grandma’s 90th birthday! <img src=\"https://i.imgur.com/ey8nu8W.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "8": {
       lat: 18.472,
@@ -772,7 +772,7 @@ var simplemaps_worldmap_mapdata={
       lat: 55.597,
       lng: 13.002,
       name: "Malmö, Sweden",
-      description: "In 2012, Priyanka lived in Sweden for 8 months to study and conduct research. Ulises visited her - it was his first time going to Europe. They have celebrated the Swedish holiday of midsummer twice - in 2012 and 2018."
+      description: "In 2012, Priyanka lived in Sweden for 8 months to study and conduct research. Ulises visited her - it was his first time going to Europe. They have celebrated the Swedish holiday of midsummer twice - in 2012 and 2018. <img src=\"https://i.imgur.com/BpmORgX.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     }
   },
   labels: {},
