@@ -730,7 +730,7 @@ var simplemaps_worldmap_mapdata={
       lat: 40.715,
       lng: -74.007,
       name: "New York City, New York",
-      description: "Ulises spent his early years in the Bronx before moving to Miami.\nPriyanka moved to Brooklyn, New York in 2013 to become a middle school reading teacher. Two years later, Ulises joined her in New York. New York is special to them because it is the first city that they lived in together! <img src=\"https://i.imgur.com/x3x4ahE.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
+      description: "Ulises spent his early years in the Bronx before moving to Miami.\nPriyanka moved to Brooklyn, New York in 2013 to become a middle school reading teacher. Two years later, Ulises joined her in New York. New York is special to them because it is the first city that they lived in together! <img src=\"https://i.imgur.com/Ag3QXPh.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "3": {
       lat: 37.777,
