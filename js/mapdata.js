@@ -736,7 +736,7 @@ var simplemaps_worldmap_mapdata={
       lat: 37.777,
       lng: -122.42,
       name: "San Francisco, CA",
-      description: "In the early part of 2015, Ulises lived in the Bay Area working his first job out of grad school. After 6 months with the company, Ulises packed his bags and moved to New York, where he was reunited with Priyanka. (New York was the first city they lived together in!) <img src=\"https://i.imgur.com/05aaDaL.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
+      description: "In the early part of 2015, Ulises lived in the Bay Area working his first job out of grad school. After 6 months with the company, Ulises packed his bags and moved to New York, where he was reunited with Priyanka. (New York was the first city they lived together in!). Now in 2019, Ulises has returned to work for Google. Priyanka will be joining him soon! <img src=\"https://i.imgur.com/05aaDaL.jpg\" width=\"100%\" style=\"margin-top: 15px;\" />"
     },
     "4": {
       lat: 39.952,
